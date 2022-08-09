@@ -1,0 +1,117 @@
+@use '../../../../_assets/sass/variables'
+@use '../../../../_assets/sass/mixins'
+
+.about-section
+        margin-top: 140px
+        padding: 20px 0
+.about
+    display: flex
+    flex-direction: row
+    margin:
+        bottom: 20px
+    
+    .about
+        &-photo
+            width: 35%
+            img
+                max-width: 620px
+
+        &-information
+            width: 65%
+
+            &-box
+                margin-top: 8px
+
+                h2.section-title, .journey > h2.section-title
+                    text-transform: uppercase
+                    font-weight: 400
+
+                    &::after
+                        @include mixins.after-bar
+
+                p
+                    line-height: 22px
+                    text-align: left
+
+                /* start  compenents skills*/
+                .skills
+                    margin-top: 16px
+
+                    .skills
+                        p
+                            font-weight: 500
+                            font-size: 13px
+
+                        &-box
+                            margin-bottom: 12px
+
+                            &-title
+                                display: flex
+                                flex-direction: row
+                                justify-content: space-between
+                                align-items: center
+                                font-weight: 500
+
+                            span
+                                font-size: 12px
+                                font-weight: 700
+
+                            .skills-progress-bar
+                                width: 100%
+                                background-color: #9FA9BE
+                                padding: 0
+                                display: block
+                                height: 8px
+
+                                .progress-bar
+                                    padding-block: 4px
+                                    background-color: variables.$yellow-color
+                                    display: block
+                                    box-shadow: inset 2px 3px 5px rgba(202, 87, 10, 0.425)
+
+                                .bar-90
+                                    width: 90%
+                                
+                                .bar-80
+                                    width: 80%
+
+                                .bar-83
+                                    width: 83%
+                                
+                                .bar-51
+                                    width: 51%
+
+                                .bar-63
+                                    width: 63%
+                /* end  compenents skills*/
+                /* start  compenents carousel*/
+                .carousel-container
+                    margin-top: 10px
+
+                    .carousel
+                        &-box
+                            display: flex
+                            flex-direction: row
+                            gap: 12px
+                            flex-wrap: nowrap
+                            overflow-x: scroll
+                            width: 100%
+                            padding-block: 12px 
+                            
+
+                            &-single
+                                width: 20%
+                                max-width: 90px
+                                height: 20%
+                                max-height: 120px
+                                background-color: #9FA9BE
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                padding: 20px 28px
+                                border-radius: 4px
+
+                                .carousel-icons
+                                    width: 4em
+                                    height: 4em
+                /* end  compenents carousel*/

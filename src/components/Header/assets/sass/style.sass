@@ -1,0 +1,87 @@
+@use '../../../../_assets/sass/variables'
+
+
+header
+    background-color: variables.$bg-background
+    padding: 12px 0
+    width: 100%
+    z-index: 10000
+    transition: 0.5s
+
+    #home
+        position: relative
+        top:0
+
+    .container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        .logotipo 
+            width: 50% 
+
+            .logotipo-white
+                display: none
+
+            figure img
+                width: 100%
+                max-width: 80px
+
+        nav
+            width: 50%
+            ul
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                font-size: 13px
+
+                li
+                    text-transform: uppercase
+                    
+                    a
+                        color: variables.$blue-color
+                        font-weight: 500
+                        letter-spacing: 1px
+                        padding: 4px 20px 
+
+                        &:hover
+                            background-color: rgba(255, 255, 255, 0.486)
+                            border-radius: 500px
+
+.sticky
+    background-color: variables.$blue-color
+    -webkit-box-shadow: 2px 7px 28px -8px rgba(47,52,56,0.39)
+    -moz-box-shadow: 2px 7px 28px -8px rgba(47,52,56,0.39)
+    box-shadow: 2px 7px 28px -8px rgba(47,52,56,0.39)
+    position: fixed
+    top: 0
+    padding: 4px 0
+    max-height: 60px
+    transition: height 60px
+
+    .container
+        height: 100%
+        max-height: 60px
+
+    .logotipo 
+            width: 20%!important
+
+            .logotipo-white
+                display: block!important
+                width: 100%
+                max-width: 60px
+            
+            .logotipo-color
+                display: none!important
+
+    nav
+        a
+            color: variables.$yellow-color!important
+            font-weight: 500
+            letter-spacing: 1px
+
+            &:hover
+                background-color: rgba(255, 255, 255, 0.226)!important
+                border-radius: 500px

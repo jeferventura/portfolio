@@ -1,0 +1,80 @@
+@use '../../../../../_assets/sass/variables'
+@use '../../../../../_assets/sass/mixins'
+
+.journey-education
+    margin-top: 60px!important
+
+    .education-box-hidden
+        display: none !important
+
+    & > .education-box-visible
+            display: block !important
+    
+    .education-box
+        display: flex
+        flex-direction: row
+        gap: 20px
+        justify-content: space-between
+        margin-bottom: 20px
+        align-items: stretch
+
+
+        &-single
+            background-color: variables.$bg-background
+            padding:
+                top: 30px 
+                inline: 20px
+                bottom: 40px
+            border-radius: 10px
+            width: calc( 100% / 3)
+            height: auto
+            box-shadow: 17px 17px 22px rgba(0, 0, 0, 0.06)
+
+            .infor-school
+                display: flex
+                height: 100%
+                flex-direction: column
+
+
+                .school
+                    &-subtitle
+                        font-size: 12px
+                        font-weight: 600
+                        letter-spacing: 1px
+                        text-transform: uppercase
+                        color: variables.$blue-color
+
+                    &-course-title
+                        font-size: 15px
+                        font-weight: 700
+                        letter-spacing: 1px
+                        margin-bottom: 10px
+
+                    &-description
+                        letter-spacing: .8px
+                        font-weight: 400
+                        font-size: 13px
+
+                    &-prevision
+                        margin-top: 5px
+                        font-size: 12px
+
+    .buttom-red-More
+        display: flex
+        flex-direction: row
+        justify-content:  center
+        margin-top: 20px
+        text-align: center
+
+        button.btn
+            display: inline-block
+            padding: 12px 36px
+            background-color: variables.$bg-background-hover
+            text-transform: uppercase
+            letter-spacing: 1.2px
+            font-weight: 600
+            cursor: pointer
+
+            &:hover
+                background-color: variables.$blue-color
+                color: #FFF

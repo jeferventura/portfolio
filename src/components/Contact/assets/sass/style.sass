@@ -1,0 +1,115 @@
+@use '../../../../_assets/sass/variables'
+@use '../../../../_assets/sass/mixins'
+    
+section.contato
+    padding:
+        top: 50px
+        bottom: 60px
+    margin-top: -60px
+    background-color: variables.$yellow-color
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    z-index: -1
+    //-webkit-clip-path: polygon(50% 50%, 100% 0, 100% 100%,  100%, 0 0)
+    //clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0)
+
+    .container
+        display: flex   
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 
+            top: 50px
+
+        h2.section-title
+            display: block 
+            color: variables.$blue-color
+            margin-top: 40px
+
+            &::after
+                @include mixins.after-bar
+                background-color: white
+                display: block
+                max-width: 18%
+
+
+    .icons-contato
+        width: 90%
+        display: flex
+        flex-direction: row
+        font-weight: 500
+        letter-spacing: .8px
+        justify-content: space-around
+        align-items: center
+        justify-items: center
+        flex-wrap: wrap
+        column-gap: 15px
+        padding: 10px 0
+        margin:
+            top: 20px
+            bottom: 28px
+
+        .icon
+            height: 1.5em
+            width: 1.5em
+            margin-right: 5px
+
+            &-groups
+                display: flex
+                align-items: center
+                gap: 5px
+                padding-bottom: 10px 
+
+    form.form-contato
+        width: 70%
+
+        .form-group
+            margin-bottom: 24px
+
+            label
+                display: block
+                margin-bottom: 4px
+                font-weight: 450
+
+            input
+                
+                height: 35px
+                width: 100%
+
+            textarea
+                height: 120px
+                padding-top: 10px
+
+            button
+                background-color: variables.$blue-color
+                padding: 12px 32px 
+                color: white
+                display: flex
+                align-items: center
+                cursor: pointer
+
+                &:hover
+                    background-color: variables.$blue-color-hover
+
+
+                .icon
+                    fill: white
+                    margin-right: 5px
+
+        .form-box-group
+            display: flex
+            column-gap: 10px
+            width: 100%
+
+            .form-group
+                &:nth-of-type(1)
+                    width: 60%
+
+                &:nth-of-type(2)
+                    width: 40%
+
+
+
+                
+                
