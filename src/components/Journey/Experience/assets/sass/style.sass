@@ -8,21 +8,20 @@
         display: flex
         flex-direction: row
         width: 100%
+        height: 100%
+        min-height: 200px
+        margin-bottom: 30px
     
         .experience-menu
             width: 20%
             display: flex
             flex-direction: column
             justify-content: space-between
-            align-items: stretch
             column-gap: 10px
 
             .menu-single
                 height: 35px
                 margin-bottom: 10px
-                display: flex
-                align-items: center
-                justify-content: flex-end
                 width: 100%
 
                 button
@@ -31,17 +30,15 @@
                     font-weight: 600
                     font-size: 14px
                     letter-spacing: .8px
-                    display: block
                     text-align: right
                     width: 100%
-                    height: 100%
                     cursor: pointer
-                    position: relative
                     border-bottom: 2.6px solid variables.$yellow-color
                     border-radius: 5px
+                    margin-bottom: 12px
                     padding: 
-                        top:5px
-                        bottom: 5px
+                        top:12px
+                        bottom: 8px
                         right: 20px
 
                     &:hover
@@ -55,6 +52,10 @@
 
                         &:hover
                             background-color: #d1d1d1
+
+                button.selected
+                    background-color: variables.$blue-color
+                    color: #FFF
 
             .menu-sigle-active
                 background-color: variables.$blue-color
@@ -87,4 +88,8 @@
                     .icons
                         height: .8em
                         margin-right: 10px
+
+                &-box
+                    display: none
+
 

@@ -15,26 +15,28 @@ export function Experience(){
         <div className="journey-experience">
             <div className="journey-experience-box">
                 <div className="experience-menu">
-                    <div className="menu-single">   
-                        <button className="button-show">Solutis</button> 
-                    </div>
-                    <div className="menu-single">   
-                        <button >Continental</button>
-                    </div>
-                    <div className="menu-single">   
-                        <button >IMES Faculdade</button>
-                    </div>
-                    <div className="menu-single">   
-                        <button >AMG Policlínica</button>
+                    <div className="menu-single"> 
+                        <li>
+                            <button className="button-show">Solutis</button> 
+                        </li>
+                        
+                        <li>
+                            <button className="button-show">Continental</button>
+                        </li>
+
+                        <li>
+                            <button className="button-show">IMES Faculdade</button>
+                        </li>
+                        <li>
+                            <button className="button-show">AMG Policlínica</button>
+                        </li>
                     </div>
                 </div>
                 <div className="experience-company">
-                    <div className="company-single">
                         <Solutis />
                         <Continental />
                         <Imes />
                         <Amg />
-                    </div>
                 </div>
             </div>
         </div>
