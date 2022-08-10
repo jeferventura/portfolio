@@ -10,8 +10,10 @@ const Header = () => {
                 <div className="container">
                     <div className="logotipo">
                         <figure>
-                            <img src="assets/images/header/logotipo.svg" alt="logotipo" className="logotipo-color"/>
-                            <img src="assets/images/header/logotipo-white.svg" alt="logotipo" className="logotipo-white"/>
+                            <a href="#home">
+                                <img src="assets/images/header/logotipo.svg" alt="logotipo" className="logotipo-color"/>
+                                <img src="assets/images/header/logotipo-white.svg" alt="logotipo" className="logotipo-white"/>
+                            </a>
                         </figure>
                     </div>
                     <div className="menu">

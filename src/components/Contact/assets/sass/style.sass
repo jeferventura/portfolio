@@ -64,6 +64,12 @@ section.contato
     form.form-contato
         width: 70%
 
+        div.align-button
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            padding-inline: 0
+
         .form-group
             margin-bottom: 24px
 
@@ -83,20 +89,20 @@ section.contato
 
             button
                 background-color: variables.$blue-color
-                padding: 12px 32px 
+                padding: 12px 38px 
                 color: white
                 display: flex
                 align-items: center
                 cursor: pointer
+                margin-right: 0
 
                 &:hover
                     background-color: variables.$blue-color-hover
 
-
                 .icon
                     fill: white
                     margin-right: 5px
-
+                
         .form-box-group
             display: flex
             column-gap: 10px
@@ -108,8 +114,3 @@ section.contato
 
                 &:nth-of-type(2)
                     width: 40%
-
-
-
-                
-                

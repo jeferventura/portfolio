@@ -7,6 +7,7 @@ import About from './components/About';
 import Journey from './components/Journey';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
         <div id="contact"></div>
         <Contact />
+        <Footer />
     </div>
   );
 }

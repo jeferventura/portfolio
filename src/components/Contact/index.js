@@ -33,7 +33,7 @@ const Contact = () => {
                         <label>Mensagem</label>
                         <textarea name="mensagem" className="form-fields" placeholder="Digite sua mensagem"></textarea>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group align-button">
                         <button type="submit" className="btn"><FaCheck className="icon"/> Enviar </button>
                     </div>
                 </form>

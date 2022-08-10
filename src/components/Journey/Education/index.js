@@ -7,7 +7,6 @@ import { Uxui } from './ux-unicornio';
 import './assets/css/style.min.css';
 
 export function Education(){
-    
 
     return(
         <div className="journey-educaction">
@@ -34,7 +33,12 @@ export function Education(){
                 </div>
             </div>
             <div className="buttom-red-More">
-                <button className="btn"> Exibir mais </button>
+                <button className="btn button-show" id="btn-mais"> 
+                    Exibe mais
+                </button>
+                <button className="btn button-hiden" id="btn-menos"> 
+                    Exibe menos
+                </button>
             </div>
         </div>
     );

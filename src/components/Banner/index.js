@@ -1,4 +1,5 @@
 import React from 'react';
+import Typed from 'typed.js'
 
 import './assets/css/style.min.css';
 
@@ -11,7 +12,7 @@ const Banner = () => {
                     <div className="banner-wrapper-box">
                         <div className="banner-title">
                             <h1>Eu sou <span className="name-pessoal">Jeferson Ventura</span></h1>
-                            <p><span id="typing">desenvolvedor front-end, designer gráfico, UX e UI design</span></p>
+                            <span className="element">desenvolvedor front-end, designer gráfico, UX e UI design</span>
                         </div>
                         <div className="banner-buttons">
                             <a href="#download" className="btn btn-bg-yellow btn-uppercase">download cv</a>
