@@ -9,10 +9,26 @@ const Contact = () => {
             <div className="container">
                 <h2 className="section-title">Contato</h2>
                 <div className="icons-contato">
-                    <div className="icon-groups"><FaInstagram className="icon" /> <p>jeferventura</p></div>
-                    <div className="icon-groups"><FaRegEnvelope className="icon" /> <p>jefersonventura91@gmail.com</p></div>
-                    <div className="icon-groups"><FaWhatsapp className="icon"  /> <p>+55 71 9 9264-7669</p></div>
-                    <div className="icon-groups"><FaTelegramPlane className="icon" />  <p>+55 71 9 9264-7669</p></div>
+                    <div className="icon-groups">
+                        <a href="" target="_blank">
+                            <FaInstagram className="icon" /> <p>jeferventura</p>
+                        </a>
+                    </div>
+                    <div className="icon-groups">
+                        <a href=""  target="_blank">
+                            <FaRegEnvelope className="icon" /> <p>jefersonventura91@gmail.com</p>
+                        </a>
+                    </div>
+                    <div className="icon-groups">
+                        <a href="" target="_blank">
+                            <FaWhatsapp className="icon"  /> <p>+55 71 9 9264-7669</p>
+                        </a>
+                    </div>
+                    <div className="icon-groups"> 
+                        <a href="" target="_blank">
+                            <FaTelegramPlane className="icon" />  <p>+55 71 9 9264-7669</p>
+                        </a>
+                    </div>
                 </div>
                 <form className="form-contato" method="post" action="">
                     <div className="form-group">
