@@ -1,0 +1,166 @@
+@use '../../../../_assets/sass/variables'
+/* telas pequenas - Largura de 200px até 480 px*/
+@mixin screen-small
+    @media screen and (min-width: 200px) and (max-width: 480px) 
+        header
+            .container
+
+                .logotipo
+                    figure img
+                        width: 60px
+                        //z-index: 15
+                        position: relative
+                .menu 
+                    nav .navbar-desktop
+                        display: none
+                    
+                    nav .navbar-mobile
+                        display: block
+
+                        #nav-menu 
+                            .icon
+                                height: 1.8em
+                                width: 1.8em
+                                fill: variables.$blue-color
+                                cursor: pointer
+
+                        .navbar
+                            background: rgba(221, 230, 241, 0.705)
+                            height: 100vh
+                            width: 100vw
+                            position: absolute
+                            backdrop-filter: blur(3px)
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            z-index: 10
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            justify-content: flex-start
+
+                            span
+                                justify-content:  flex-end
+                                display: flex
+                                width: 100%
+                                padding: 20px
+                                cursor: pointer
+                                margin-right: 20px
+
+                                .icon
+                                    width: 1.5em
+                                    height: 1.5em
+
+                            a
+                                display: block
+                                padding: 8px 16px
+                                letter-spacing: 1.2px
+                                width: 60%
+                                font-weight: 500
+                                margin-top: 20px
+                                text-align: center
+                                border-radius: 500px
+                                text-transform: uppercase
+                                font-size: 14px
+                                
+
+                                &:hover
+                                    background-color: rgba(255, 255, 255, 0.527)
+                            
+        header.sticky
+            .container
+                .menu nav .navbar-mobile
+                    #nav-menu 
+                        .icon
+                            fill: #FFF
+
+                        
+
+
+/* telas média- Largura de 481px até 768 px*/
+@mixin screen-media
+    @media screen and (min-width: 481px) and (max-width: 768px)
+        header
+            .container
+
+                .logotipo
+                    figure img
+                        width: 60px
+                        //z-index: 15
+                        position: relative
+                .menu 
+                    nav .navbar-desktop
+                        display: none
+                    
+                    nav .navbar-mobile
+                        display: block
+
+                        #nav-menu 
+                            .icon
+                                height: 1.8em
+                                width: 1.8em
+                                fill: variables.$blue-color
+                                cursor: pointer
+
+                        .navbar
+                            background: rgba(221, 230, 241, 0.705)
+                            height: 100vh
+                            width: 100vw
+                            position: absolute
+                            backdrop-filter: blur(3px)
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            z-index: 10
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            justify-content: flex-start
+                            
+                            span
+                                justify-content:  flex-end
+                                display: flex
+                                width: 100%
+                                padding: 20px
+                                cursor: pointer
+                                margin-right: 20px
+
+                                .icon
+                                    width: 1.5em
+                                    height: 1.5em
+
+                            a
+                                display: block
+                                padding: 8px 16px
+                                letter-spacing: 1.2px
+                                width: 60%
+                                font-weight: 500
+                                margin-top: 20px
+                                text-align: center
+                                border-radius: 500px
+                                text-transform: uppercase
+                                font-size: 14px
+                                
+
+                                &:hover
+                                    background-color: rgba(255, 255, 255, 0.527)
+                            
+        header.sticky
+            .container
+                .menu nav .navbar-mobile
+                    #nav-menu 
+                        .icon
+                            fill: #FFF
+
+
+
+/* telas grande- Largura de 769px até 1024 px*/
+@mixin screen-large
+    @media screen and (min-width: 769px) and (max-width: 1024px)
+
+    
+/* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
+@mixin screen-extralarge
+    @media screen and (min-width: 1220px)

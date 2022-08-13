@@ -1,5 +1,6 @@
 import React from 'react';
-import Typed from 'typed.js'
+import { FaDownload, FaRegEnvelope } from 'react-icons/fa'
+
 
 import './assets/css/style.min.css';
 
@@ -12,11 +13,19 @@ const Banner = () => {
                     <div className="banner-wrapper-box">
                         <div className="banner-title">
                             <h1>Eu sou <span className="name-pessoal">Jeferson Ventura</span></h1>
-                            <span className="element">desenvolvedor front-end, designer gráfico, UX e UI design</span>
+                            <div className="element">
+                                <p>desenvolvedor front-end,</p> 
+                                <p>designer gráfico,</p>
+                                <p>UX e UI design</p>
+                            </div>
                         </div>
                         <div className="banner-buttons">
-                            <a href="#download" className="btn btn-bg-yellow btn-uppercase">download cv</a>
-                            <a href="#contato" className="btn btn-line-blue btn-uppercase">Contate-me</a>
+                            <a href="assets/docs/curriculo.pdf" className="btn btn-bg-yellow btn-uppercase" target="_blank">
+                                <FaDownload className="icon"/>download cv
+                            </a>
+                            <a href="/#contact" className="btn btn-line-blue btn-uppercase">
+                                <FaRegEnvelope className="icon" />Contate-me
+                            </a>
                         </div>
                         <div className="banner-icons">
                             <img className="icons" src="/assets/images/banner/icons/css.svg" alt="CSS 3" />

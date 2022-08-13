@@ -13,11 +13,13 @@
     .education-box
         display: flex
         flex-direction: row
-        gap: 20px
+        flex-wrap: wrap
+        column-gap: 3%
+        row-gap: 16px
         justify-content: space-between
         margin-bottom: 20px
         align-items: stretch
-
+        min-width: 200px
 
         &-single
             background-color: variables.$bg-background
@@ -26,7 +28,7 @@
                 inline: 20px
                 bottom: 40px
             border-radius: 10px
-            width: calc( 100% / 3)
+            width: calc(( 100% / 3) - 2%)
             height: auto
             box-shadow: 17px 17px 22px rgba(0, 0, 0, 0.06)
 

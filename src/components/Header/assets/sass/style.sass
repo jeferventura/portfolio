@@ -1,5 +1,6 @@
 @use '../../../../_assets/sass/variables'
-
+@use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
 
 header
     background-color: variables.$bg-background
@@ -29,27 +30,32 @@ header
                 max-width: 80px
 
         nav
-            width: 50%
-            ul
+            .navbar-desktop
+                width: 50%
+                position: relative
                 display: flex
                 flex-direction: row
                 justify-content: space-between
                 align-items: center
                 font-size: 13px
 
-                li
+                a
+                    color: variables.$blue-color
+                    font-weight: 500
+                    letter-spacing: 1px
+                    padding: 8px 20px 
+                    z-index: 1
+                    position: relative
                     text-transform: uppercase
-                    
-                    a
-                        color: variables.$blue-color
-                        font-weight: 500
-                        letter-spacing: 1px
-                        padding: 4px 20px 
+                    display: inline-block
 
-                        &:hover
-                            background-color: rgba(255, 255, 255, 0.486)
-                            border-radius: 500px
-                            transition: all .3s ease-in-out
+                    &:hover
+                        background-color: rgba(255, 255, 255, 0.486)
+                        border-radius: 500px
+                        transition: all .3s ease-in-out
+            
+            .navbar-mobile
+                display: none
 
 .sticky
     background-color: variables.$blue-color
@@ -61,6 +67,7 @@ header
     padding: 4px 0
     max-height: 60px
     transition: height 60px
+    z-index: 30
 
     .container
         height: 100%
@@ -77,7 +84,7 @@ header
             .logotipo-color
                 display: none!important
 
-    nav
+    nav .navbar-desktop
         a
             color: variables.$yellow-color!important
             font-weight: 500
@@ -86,3 +93,12 @@ header
             &:hover
                 background-color: rgba(255, 255, 255, 0.226)!important
                 border-radius: 500px
+
+
+//css media screen
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge
+
+

@@ -1,5 +1,6 @@
 @use '../../../../_assets/sass/variables'
 @use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
 
 section.portfolio
 
@@ -134,3 +135,8 @@ section.portfolio
 
             #clinica
                 @include mixins.bg-image-portfolio('clinica-medica.png')
+
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge

@@ -10,22 +10,22 @@ const Contact = () => {
                 <h2 className="section-title">Contato</h2>
                 <div className="icons-contato">
                     <div className="icon-groups">
-                        <a href="" target="_blank">
+                        <a href="https://www.instagram.com/jeferventura" target="_blank" rel="noreferrer">
                             <FaInstagram className="icon" /> <p>jeferventura</p>
                         </a>
                     </div>
                     <div className="icon-groups">
-                        <a href=""  target="_blank">
+                        <a href="mailto:jeferventura@gmail.com"  target="_blank" rel="noreferrer">
                             <FaRegEnvelope className="icon" /> <p>jefersonventura91@gmail.com</p>
                         </a>
                     </div>
                     <div className="icon-groups">
-                        <a href="" target="_blank">
+                        <a href="https://wa.me/message/AJJJGGAIOG5PP1" target="_blank" rel="noreferrer">
                             <FaWhatsapp className="icon"  /> <p>+55 71 9 9264-7669</p>
                         </a>
                     </div>
                     <div className="icon-groups"> 
-                        <a href="" target="_blank">
+                        <a href="https://t.me/jeferventura" target="_blank" rel="noreferrer">
                             <FaTelegramPlane className="icon" />  <p>+55 71 9 9264-7669</p>
                         </a>
                     </div>

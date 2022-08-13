@@ -1,0 +1,288 @@
+/* telas pequenas - Largura de 200px até 480 px*/
+@mixin screen-small
+    @media screen and (min-width: 200px) and (max-width: 480px) 
+        section.banner
+            height: 63%
+            max-height: 420px
+            padding-block: 24px
+
+            .banner-wrapper
+                
+                .banner-wrapper-box
+                    gap: 0
+                    margin-top: 0
+                    white-space: wrap
+
+                .banner-title
+                    width: 100%
+                    z-index: 2
+
+                    h1, span
+                        font-size: 1rem
+                        width: 50%
+                    
+                    p
+                        font-size: 10px
+                        display: block
+
+                        &:first-child
+                            margin-top: 8px
+                
+                .banner-photo-profile
+                    img
+                        width: 140px!important
+                        margin-left: -80px
+                        z-index: -2
+
+
+                .banner-buttons
+                    display: flex
+                    flex-direction: column
+                    z-index: 2
+
+                    a
+                        font-size: .60rem
+                        font-weight: 600
+                        padding: 4px 8px
+                        max-width: 140px
+                        height: 35px
+                        margin:
+                            bottom: 0
+                            inline: 0
+
+                .banner-icons
+                    gap: 2px 
+                    z-index: 5
+                    img 
+                        width: 10%
+                        max-width: 25px
+                        gap: 8px
+
+
+
+
+/* telas média- Largura de 481px até 768 px*/
+@mixin screen-media
+    @media screen and (min-width: 481px) and (max-width: 590px)
+        section.banner
+            height: 63%
+            max-height: 420px
+            padding-block: 24px
+
+            .banner-wrapper
+                
+                .banner-wrapper-box
+                    gap: 0
+                    margin-top: 0
+                    white-space: wrap
+
+                .banner-title
+                    width: 100%
+                    z-index: 2
+
+                    h1, span
+                        font-size: 1.7rem
+                        width: 50%
+                    
+                    p
+                        font-size: 11px
+                        display: block
+
+                        &:first-child
+                            margin-top: 8px
+                
+                .banner-photo-profile
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    width: 100%
+
+                    img
+                        max-width: 540px!important
+                        width: cover
+                        margin-left: -50%
+                        z-index: -2
+
+                .banner-buttons
+                    display: flex
+                    flex-direction: column
+                    z-index: 2
+
+                    a
+                        font-size: .65em
+                        font-weight: 600
+                        padding: 12px 8px
+                        max-width: 160px
+                        height: 40px
+                        margin:
+                            bottom: 0
+                            inline: 0
+
+                .banner-icons
+                    gap: 2px 
+                    margin-top: 12px
+                    img 
+                        width: 10%
+                        max-width: 25px
+                        gap: 8px
+
+    @media screen and (min-width: 591px) and (max-width: 768px)
+        section.banner
+            height: 63%
+            max-height: calc(340px + 24px)
+            padding-block: 24px
+
+            .banner-wrapper
+                gap: 2%
+                align-items: center
+
+                .banner-wrapper-box
+                    gap: 0
+                    width: 60%
+                    margin-top: 0
+                    padding-right: 32px
+                    white-space: wrap
+
+                .banner-title
+                    width: 100%
+                    z-index: 2
+
+                    h1, span
+                        font-size: 1.7rem
+                        width: 100%
+                    
+                    p
+                        font-size: 11px
+                        display: block
+
+                        &:first-child
+                            margin-top: 8px
+                
+                .banner-photo-profile
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    //width: 100%
+
+                    img
+                        max-width: 280px!important
+                        height: cover
+                        max-height: 320px
+                        width: cover
+                        margin-left: -20%
+                        z-index: -2
+
+
+                .banner-buttons
+                    display: flex
+                    flex-direction: row
+                    flex-wrap: wrap
+                    z-index: 2
+
+                    a
+                        font-size: .65em
+                        font-weight: 600
+                        padding: 12px 8px
+                        max-width: 160px
+                        height: 40px
+                        margin:
+                            bottom: 0
+                            inline: 0
+
+                .banner-icons
+                    gap: 2px 
+                    margin-top: 12px
+                    img 
+                        width: 10%
+                        max-width: 25px
+                        gap: 8px
+
+
+
+
+/* telas grande- Largura de 769px até 1024 px*/
+@mixin screen-large
+    @media screen and (min-width: 769px) and (max-width: 1024px)
+        section.banner
+            height: 70%
+            max-height: calc(450px + 24px)
+            padding-block: 24px
+
+            .banner-wrapper
+                gap: 2%
+                align-items: center
+                
+                .banner-wrapper-box
+                    row-gap: 1rem
+                    width: 60%
+                    margin-top: 0
+                    padding-right: 32px
+                    white-space: wrap
+
+                .banner-title
+                    width: 100%
+                    z-index: 2
+
+                    h1, span
+                        font-size: 2.2rem
+                        width: 100%
+                        display: block
+
+                    .element
+                        display: flex
+                        flex-direction: row
+                        flex-wrap: wrap
+                        width: 100%
+                    
+                    p
+                        font-size: 12px
+                        display: inline-block
+
+                
+                .banner-photo-profile
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    //width: 100%
+
+                    img
+                        max-width: 380px!important
+                        height: cover
+                        max-height: 420px
+                        width: cover
+                        margin-left: -15%
+                        z-index: -2
+
+
+                .banner-buttons
+                    display: flex
+                    flex-direction: row
+                    flex-wrap: wrap
+                    z-index: 2
+
+                    a
+                        font-size: .69rem
+                        font-weight: 600
+                        padding: 16px 8px
+                        max-width: 200px
+                        width: calc(50% - 10px)
+                        min-height: 40px
+                        height: 100%
+                        max-height: 45px
+                        margin:
+                            bottom: 0
+                            inline: 0
+
+                .banner-icons
+                    gap: 2px 
+                    margin-top: 12px
+                    img 
+                        width: 10%
+                        max-width: 25px
+                        gap: 8px
+
+
+
+/* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
+@mixin screen-extralarge
+    @media screen and (min-width: 1220px)

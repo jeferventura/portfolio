@@ -9,7 +9,7 @@ import './assets/css/style.min.css';
 const Journey = () => {
 
     return ( 
-        <section>
+        <section className="journey-section">
             <div className="journey container">
                 <div className="title">
                     <h2 className="section-title">Minhas Jornadas</h2>

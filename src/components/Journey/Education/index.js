@@ -10,7 +10,7 @@ export function Education(){
 
     return(
         <div className="journey-educaction">
-            <div className="education-box">
+            <div className="education-box scroll-bar-ajustes">
                 <div className="education-box-single">
                     <Unifacs />
                 </div>
@@ -20,15 +20,13 @@ export function Education(){
                 <div className="education-box-single">
                     <Uxui />
                 </div>
-            </div>
-            <div className="education-box education-box-hidden">
-                <div className="education-box-single">
+                <div className="education-box-single education-box-hidden">
                     <Unifacs />
                 </div>
-                <div className="education-box-single">
+                <div className="education-box-single education-box-hidden">
                     <Tecnicoti />
                 </div>
-                <div className="education-box-single">
+                <div className="education-box-single education-box-hidden">
                     <Uxui />
                 </div>
             </div>

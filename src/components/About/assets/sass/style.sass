@@ -1,9 +1,12 @@
 @use '../../../../_assets/sass/variables'
 @use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
 
 .about-section
         margin-top: 140px
         padding: 20px 0
+
+        
 .about
     display: flex
     flex-direction: row
@@ -19,8 +22,17 @@
         &-information
             width: 65%
 
+            .img-bg
+                display: none
+                width: cover
+                
+            .box-text p
+                padding-bottom: 8px
+
             &-box
                 margin-top: 8px
+
+                
 
                 h2.section-title, .journey > h2.section-title
                     text-transform: uppercase
@@ -100,7 +112,6 @@
                             
 
                             &-single
-                                width: 20%
                                 max-width: 90px
                                 height: 20%
                                 max-height: 120px
@@ -108,10 +119,15 @@
                                 display: flex
                                 justify-content: center
                                 align-items: center
-                                padding: 20px 28px
+                                padding: 20px 16px
                                 border-radius: 4px
 
                                 .carousel-icons
                                     width: 4em
                                     height: 4em
                 /* end  compenents carousel*/
+
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge

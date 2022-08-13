@@ -1,5 +1,6 @@
 @use '../../../../_assets/sass/variables'
 @use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
 
 /* start  compenents journey*/
 section .journey
@@ -39,12 +40,16 @@ section .journey
     .journey-experience
         margin-top: 20px
 
-        
-            
-
     .journey-education
         margin-top: 20px
 
 
 
-            /* end  compenents carousel*/
+/* end  compenents carousel*/
+
+//css media screen
+@include mixins_midias.screen-small
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge

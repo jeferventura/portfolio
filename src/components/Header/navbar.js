@@ -1,16 +1,39 @@
 import React from 'react';
+import { FaBars, FaTimes }from 'react-icons/fa'
 
 export function Navbar() {
+    return(
+        <nav>
+            <div className="navbar-desktop">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#journey">Jornada</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contato</a>
+            </div>  
+        </nav>
+    );
+}
+
+
+export function NavbarMobile() {
 
     return(
-        <nav>  
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#journey">Jornada</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+
+        <nav>
+            <div className="navbar-mobile">
+                <div id="nav-menu">
+                    <FaBars className="icon" />
+                </div>
+                <div className="navbar obj-hiden">
+                    <span><FaTimes className="icon" /></span>
+                    <a href="#home">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#journey">Jornada</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
         </nav>
     );
 }
