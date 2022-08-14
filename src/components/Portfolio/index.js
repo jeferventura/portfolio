@@ -4,7 +4,8 @@ import React from 'react';
 import { 
     Agencia, 
     Hotel, 
-    Clinica
+    Clinica, 
+    Upconsultoria
 }  from './Jobs/carousel'
 
 import './assets/css/style.min.css';
@@ -19,13 +20,7 @@ const Portfolio = () => {
                         <Agencia />
                         <Hotel />
                         <Clinica />
-                        <Hotel />
-                        <Clinica />
-                        <Hotel />
-                        <Clinica />
-                        <Hotel />
-                        <Clinica />
-                        
+                        <Upconsultoria />
                     </div>
                 </div>
             </div>

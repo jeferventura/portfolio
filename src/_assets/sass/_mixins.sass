@@ -15,8 +15,8 @@
     background:
         image: url('/public/assets/images/portfolio/#{$img}')
         repeat: no-repeat
-        size: cover
-        position: center
+        size: 100%
+        position: top
 
 @mixin scroll-bar
     scrollbar-width: thin
@@ -102,6 +102,11 @@
                             #nav-menu
                                 .icon
                                     fill:#FFF
+                            .navbar
+                                background-color: rgba(0,0 ,0 ,0.5 )
+
+                                a
+                                    color: #FFF
 
     //banner dark-mode
     section.banner-dark
