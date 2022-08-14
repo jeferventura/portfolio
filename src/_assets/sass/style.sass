@@ -8,6 +8,7 @@
     padding: 0
     box-sizing: border-box
     color: #2b2d2e
+    font-family: 'Montserrat', sans-serif
 
 html 
     width: 100%
@@ -18,7 +19,7 @@ body
     width: 100%
     height: 100%
     font-family: 'Montserrat', sans-serif
-    overflow-x: hidden
+    overflow-x: auto
 
     .App, .root
         height: 100%
@@ -57,6 +58,7 @@ body
 
     button
         border: none
+        appearance: none
 
     img
         width: 100%
@@ -113,7 +115,7 @@ body
 
 
     .btn-line-blue
-        border: 1px solid variables.$blue-color
+        border: 2.6px solid variables.$blue-color
 
     .section-title
         text-transform: uppercase
@@ -148,5 +150,8 @@ body
         &:focus
             outline: 1px solid  variables.$blue-color
 
-    
+//screen  
 @include mixins.screen-small
+
+//css dark mode
+@include mixins.darkmode

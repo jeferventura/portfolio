@@ -26,6 +26,7 @@ $(document).ready(function(){
     });
 });
 
+
 $(document).ready(function() {
     
     /* ao clina no primeiro botão - a div aparece remove classe e o botão mais tbm some*/
@@ -36,11 +37,7 @@ $(document).ready(function() {
         $(".journey-educaction div.education-box-single:nth-child(6)").removeClass("education-box-hidden");
         $(".buttom-red-More button#btn-menos").removeClass("button-hiden");
     });
-});
 
-
-$(document).ready(function() {
-    
     /* ao clina no primeiro botão - a div aparece remove classe e o botão mais tbm some*/
     $(".buttom-red-More button#btn-menos").click(function() {
         $(".buttom-red-More button#btn-menos").addClass("button-hiden");
@@ -51,6 +48,8 @@ $(document).ready(function() {
     });
 });
 
+
+//opções do menu mobile, 
 $(document).ready(function() {
     $(".navbar-mobile svg.icon").click(function() {
         $(".navbar-mobile div.navbar").removeClass("obj-hiden");
@@ -67,3 +66,41 @@ $(document).ready(function() {
         $("#nav-menu svg.icon").removeClass("obj-hiden");
     });
 });
+
+//altenar entre lightMode e darkMode
+
+$(document).ready(function() {
+    $('.theme__toggle').change(function(){
+        if($(this).prop('checked')) {
+            $(".App").addClass("app-dark"); 
+            $("header").addClass("header-dark");
+            $("section.banner").addClass("banner-dark");  
+            $("section.about-section").addClass("about-dark"); 
+            $("section.journey-section").addClass("journey-dark"); 
+            $("section.portfolio").addClass("portfolio-dark"); 
+            $("section.contato").addClass("contato-dark");  
+            $("footer").addClass("footer-dark"); 
+            
+        
+            $("img#figma").addClass("obj-hiden"); 
+            $("svg#figma").removeClass("obj-hiden");  
+
+        }else{
+            $(".App").removeClass("app-dark");  
+            $("header").removeClass("header-dark");
+            $("section.banner").removeClass("banner-dark");
+            $("section.about-section").removeClass("about-dark"); 
+            $("section.journey-section").removeClass("journey-dark");  
+            $("section.portfolio").removeClass("portfolio-dark"); 
+            $("section.contato").removeClass("contato-dark"); 
+            $("footer").removeClass("footer-dark"); 
+            
+
+            $("img#figma").removeClass("obj-hiden"); 
+            $("svg#figma").addClass("obj-hiden");
+            
+        }
+    }).change();
+});
+
+

@@ -21,7 +21,7 @@
         align-items: stretch
         min-width: 200px
 
-        &-single
+        .education-box-single
             background-color: variables.$bg-background
             padding:
                 top: 30px 
@@ -30,15 +30,40 @@
             border-radius: 10px
             width: calc(( 100% / 3) - 2%)
             height: auto
+            animation: visible
+            animation-duration: .5s
             box-shadow: 17px 17px 22px rgba(0, 0, 0, 0.06)
+
+            &:nth-of-type(4)
+                animation: visible
+                animation-duration: .5s
+
+            &:nth-of-type(5)
+                animation: visible
+                animation-duration: .8s
+
+            &:nth-of-type(6)
+                animation: visible
+                animation-duration: .9s
+                
+
+            @keyframes visible
+                from
+                    transform: translateY(50%)
+
+                to
+                    transform: translateY(0%)
+
+                    
 
 
             .infor-school
                 display: flex
+                justify-content: space-around
+                align-items: flex-start
                 height: 100%
                 flex-direction: column
                 transition:  all 0.5s ease
-
 
                 .school
                     &-subtitle

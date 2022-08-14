@@ -1,5 +1,16 @@
 import React from 'react';
-import { FaDownload, FaRegEnvelope } from 'react-icons/fa'
+import { 
+    FaDownload, 
+    FaRegEnvelope, 
+    FaFigma, 
+    FaCss3Alt,
+    FaHtml5, 
+    FaAngular, 
+    FaBootstrap, 
+    FaPhp, 
+    FaJsSquare
+
+} from 'react-icons/fa'
 
 
 import './assets/css/style.min.css';
@@ -28,19 +39,18 @@ const Banner = () => {
                             </a>
                         </div>
                         <div className="banner-icons">
-                            <img className="icons" src="/assets/images/banner/icons/css.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/html.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/js.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/figma.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/php.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/angular.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/bootstrap.svg" alt="CSS 3" />
+                            <FaCss3Alt className="icons" id="css"  alt="CSS 3" />
+                            <FaHtml5 className="icons" id="html" alt="HTML 5" />
+                            <FaJsSquare className="icons" id="js" alt="JavaScript" />
+                            <FaFigma className="icons obj-hiden" id="figma" alt="Figma" />
+                            <img className="icons" id="figma" src="/assets/images/banner/icons/figma.svg" alt="Figma" />
+                            <FaPhp className="icons" id="php" alt="PHP" />
+                            <FaAngular className="icons" id="angular"  alt="Angular" />
+                            <FaBootstrap className="icons" id="bootstrap" alt="Bootstrap" />
                         </div>
                     </div>
                     <div className="banner-photo-profile">
-                        <figure>
-                            <img src="/assets/images/banner/foto-perfil-bg.svg" alt="Foto do perfil" />
-                        </figure>
+                        <img src="/assets/images/banner/foto-perfil-bg.svg" alt="Foto do perfil" />
                     </div>
                 </div>
             </div>

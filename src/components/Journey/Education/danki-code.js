@@ -1,13 +1,13 @@
 import React from 'react';
 
-export function webmaster(){
+export function Dankicode(){
     return(
         <div className="box-school">
             <div className="infor-school">
-                <p className="school-subtitle">Universidade Salvador</p>
-                <p className="school-course-title">Bacharelado em Ciência da Computação</p>
-                <p className="school-description">Graduação - Cursando o 5º período</p>
-                <p className="school-prevision">Previsão de conclusão em 12/2023</p>
+                <p className="school-subtitle">Danki Code Cursos</p>
+                <p className="school-course-title">Desenvolvedor Full-stack</p>
+                <p className="school-description">Educação Profissional - Cursando</p>
+                <p className="school-prevision">Cursos livres de aperfeiçoamento</p>
             </div>
         </div>
     );

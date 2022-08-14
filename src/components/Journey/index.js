@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBriefcase } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 
 import { Education } from  './Education';
 import { Experience }  from  './Experience';
@@ -24,7 +24,7 @@ const Journey = () => {
                 </div>
                 <div className="journey-education">
                     <div className="title-content">
-                        <FaBriefcase className="icons" /> <p>Educação</p>
+                        <FaGraduationCap className="icons" /> <p>Educação</p>
                     </div>
                     <div className="journey-content">
                         <Education />

@@ -35,7 +35,7 @@ export function Skills(){
 
             <div className="skills-box"> 
                 <div className="skills-box-title">
-                    <p>Angular</p>
+                    <p>React.Js</p>
                     <span>51%</span>
                 </div>
                 <div className="skills-progress-bar">

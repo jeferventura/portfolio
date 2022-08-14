@@ -10,12 +10,13 @@ export  function Imes (){
             <div className="company-box">
                 <div className="company-header">
                     <h4>Assistente Adminstrativo e Financeiro</h4>
-                    <p className="company-subtitle">julho de 2021 - Atualmente</p>
+                    <p className="company-subtitle">Abril de 2016 - Junho de 2019</p>
                 </div>
                 <div className="company-description-job">
-                    <p><FaChevronRight className="icons" /> Atendimento help desk com resolução de problemas. Atendimento via telefone ou remoto</p>
-                    <p><FaChevronRight className="icons" /> Suporte a sistemas web, configurações de impressoras em rede, diagnósticos e configuração de computadores</p>
-                    <p><FaChevronRight className="icons" /> Análises de chamados e escalonamentos para grupos solucionadores, instalação de softwares, suporte Microsoft Office, Outlook, IBM Notes</p>
+                    <p><FaChevronRight className="icons" /> Controle financeiro empresarial, negociação de dividas, emissão e controle de cobranças</p>
+                    <p><FaChevronRight className="icons" /> Suporte a sistemas educacionais, instrutor de treinamentos de informática e sistemas AVA</p>
+                    <p><FaChevronRight className="icons" /> Administração e controles de acesso Moodle. Suporte acadêmico, atendimento a alunos e professores</p>
+                    <p><FaChevronRight className="icons" /> Emissão e controle de documentos acadêmicos e financeiros.</p>
                 </div>
             </div>
         );

@@ -31,6 +31,12 @@
                 flex-wrap: wrap
                 gap: 12px
 
+                .btn-line-blue
+                    color: variables.$blue-color
+
+                    .icon
+                        fill: variables.$blue-color
+                        
                 a
                     margin-left: 0
                     width: 100%
@@ -39,6 +45,7 @@
                     text-align: center
                     justify-content: center
                     align-items: center
+                    font-weight: 600
 
 
                     .icon
@@ -112,13 +119,38 @@
         display: flex
         flow-direction: row
         align-items: center
+        column-gap: 8px
         margin:
-            top: 4px
+            top: 8px
+
+        .icons
+            height: 1.7rem
+            width: 1.7rem
+            margin-right: 8px
+
+        svg#css
+            fill: #316ac5
+
+        svg#html
+            fill: #e45604
+        
+        svg#js
+            fill: #cfa10a
+
+        svg#php
+            fill: #431e80
+
+        svg#angular
+            fill: #a80e16
+
+        svg#bootstrap
+            fill: #710ca0
 
         img
-            width: 20%
-            max-width: 27px
-            margin: 0 8px 
+            height: 1.7rem
+            width: 1.7rem
+            max-width: 24px
+            //margin: 0 8px 
 
     &-photo-profile
         width: 35%

@@ -3,6 +3,9 @@ import React from 'react';
 import { Unifacs } from './unifacs';
 import { Tecnicoti } from './ifba';
 import { Uxui } from './ux-unicornio';
+import { Frontend } from './dev-media';
+import { Dankicode } from './danki-code';
+import { Wiseup } from './wiseup';
 
 import './assets/css/style.min.css';
 
@@ -21,13 +24,13 @@ export function Education(){
                     <Uxui />
                 </div>
                 <div className="education-box-single education-box-hidden">
-                    <Unifacs />
+                    <Frontend />
                 </div>
                 <div className="education-box-single education-box-hidden">
-                    <Tecnicoti />
+                    <Dankicode />
                 </div>
                 <div className="education-box-single education-box-hidden">
-                    <Uxui />
+                    <Wiseup />
                 </div>
             </div>
             <div className="buttom-red-More">

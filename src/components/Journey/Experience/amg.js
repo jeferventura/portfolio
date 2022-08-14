@@ -10,12 +10,11 @@ export function Amg(){
         <div className="company-box">
             <div className="company-header">
                 <h4>Assistente Administrativo - Saúde Ocupacional</h4>
-                <p className="company-subtitle">julho de 2021 - Atualmente</p>
+                <p className="company-subtitle">Março de 2014 - Março de 2016</p>
             </div>
             <div className="company-description-job">
-                <p><FaChevronRight className="icons" /> Atendimento help desk com resolução de problemas. Atendimento via telefone ou remoto</p>
-                <p><FaChevronRight className="icons" /> Suporte a sistemas web, configurações de impressoras em rede, diagnósticos e configuração de computadores</p>
-                <p><FaChevronRight className="icons" /> Análises de chamados e escalonamentos para grupos solucionadores, instalação de softwares, suporte Microsoft Office, Outlook, IBM Notes</p>
+                <p><FaChevronRight className="icons" /> Emissão e controle de ASO (Atestado de Saúde Ocupacional)</p>
+                <p><FaChevronRight className="icons" /> Controle e liberação exames de empresas, e PCMSO (programa de controle médico ocupacional)</p>
             </div>
         </div>
     );
