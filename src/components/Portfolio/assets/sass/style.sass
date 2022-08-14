@@ -1,19 +1,15 @@
 @use '../../../../_assets/sass/variables'
 @use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
 
 section.portfolio
 
     .portfolio-container
+        background-color: variables.$blue-color
         margin:
             top: 80px
             bottom: 0
-        background-color: variables.$blue-color
-        background-image: url('../images/bg-wave-blue.svg')
-        background-repeat: no-repeat
-        background-size: 100%
-        background-position: center
-        //-webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0)
-        //clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0)
+        
 
     .format-bg
         background-color: variables.$blue-color
@@ -134,3 +130,22 @@ section.portfolio
 
             #clinica
                 @include mixins.bg-image-portfolio('clinica-medica.png')
+            
+            #upconsultoria
+                @include mixins.bg-image-portfolio('upconsultoria.png')
+
+                .icons-carousel-box
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    row-gap: 4px
+                    .icon
+                        display: block
+                    p
+                        display: block
+
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge
