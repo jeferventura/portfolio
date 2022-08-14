@@ -130,6 +130,20 @@ section.portfolio
 
             #clinica
                 @include mixins.bg-image-portfolio('clinica-medica.png')
+            
+            #upconsultoria
+                @include mixins.bg-image-portfolio('upconsultoria.png')
+
+                .icons-carousel-box
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    row-gap: 4px
+                    .icon
+                        display: block
+                    p
+                        display: block
 
 @include mixins_midias.screen-small
 @include mixins_midias.screen-media
