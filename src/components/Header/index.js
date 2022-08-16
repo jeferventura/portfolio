@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './assets/css/style.min.css';
 import { Navbar, NavbarMobile } from './navbar'
 
 const Header = () => {
-
-    const [menuIsVisible, setMenuIsVisible] = useState(false)
 
     return (
         <header>
@@ -20,10 +18,7 @@ const Header = () => {
                         </figure>
                     </div>
                     <div className="menu">
-                        <Navbar 
-                            menuIsVisible={menuIsVisible}
-                            setMenuIsVisible={setMenuIsVisible}
-                        />
+                        <Navbar />
                         <NavbarMobile />
                     </div>
                 </div>

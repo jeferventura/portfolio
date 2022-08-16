@@ -5,16 +5,19 @@
             .portfolio-container
                 margin-top: 40px
 
-                .portfolio-carousel-box
-
-                    &:last-of-type
-                        margin-right: 3%
-
                 .container
                     padding: 
                         top: 50px
                         bottom: 40px
-                        right: 0
+                        inline: 0
+
+                    .portfolio-carousel-box
+
+                        &:first-of-type
+                            margin-left: 20px
+
+                        &:last-of-type
+                            margin-right: 20px
 
     
 /* telas média- Largura de 481px até 768 px*/
@@ -24,16 +27,19 @@
             .portfolio-container
                 margin-top: 40px
 
-                .portfolio-carousel-box
-
-                    &:last-of-type
-                        margin-right: 3%
-
                 .container
                     padding: 
                         top: 50px
                         bottom: 40px
-                        right: 0
+                        inline: 0
+
+                    .portfolio-carousel-box
+
+                        &:first-of-type
+                            margin-left: 20px
+
+                        &:last-of-type
+                            margin-right: 20px
 
 
 /* telas grande- Largura de 769px até 1024 px*/
@@ -43,17 +49,19 @@
             .portfolio-container
                 margin-top: 40px
 
-                .portfolio-carousel-box
-
-                    &:last-of-type
-                        margin-right: 3%
-
                 .container
                     padding: 
                         top: 50px
                         bottom: 40px
-                        right: 0
+                        inline: 0
 
+                    .portfolio-carousel-box
+
+                        &:first-of-type
+                            margin-left: 20px
+
+                        &:last-of-type
+                            margin-right: 20px
     
 /* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
 @mixin screen-extralarge

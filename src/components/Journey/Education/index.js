@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Unifacs } from './unifacs';
-import { Tecnicoti } from './ifba';
-import { Uxui } from './ux-unicornio';
-import { Frontend } from './dev-media';
-import { Dankicode } from './danki-code';
-import { Wiseup } from './wiseup';
+import { Unifacs } from './School/unifacs';
+import { Tecnicoti } from './School/ifba';
+import { Uxui } from './School/ux-unicornio';
+import { Frontend } from './School/dev-media';
+import { Dankicode } from './School/danki-code';
+import { Wiseup } from './School/wiseup';
 
 import './assets/css/style.min.css';
 
 export function Education(){
+
+    const [itemHiden, setItemHiden] = useState('obj-hiden');
+    const [changeItem, setChangeItem] = useState('');
+
+    function showItem(){
+        setItemHiden('');
+        setChangeItem('obj-hiden');
+    }
+
+    function hidenItem(){
+        setItemHiden('obj-hiden');
+        setChangeItem('');
+    }
+
 
     return(
         <div className="journey-educaction">
@@ -23,21 +37,21 @@ export function Education(){
                 <div className="education-box-single">
                     <Uxui />
                 </div>
-                <div className="education-box-single education-box-hidden">
+                <div className={"education-box-single "+itemHiden+""}>
                     <Frontend />
                 </div>
-                <div className="education-box-single education-box-hidden">
+                <div className={"education-box-single "+itemHiden+""}>
                     <Dankicode />
                 </div>
-                <div className="education-box-single education-box-hidden">
+                <div className={"education-box-single "+itemHiden+""}>
                     <Wiseup />
                 </div>
             </div>
             <div className="buttom-red-More">
-                <button className="btn button-show" id="btn-mais"> 
+                <button className={"btn "+changeItem+""} id="btn-mais" onClick={showItem}> 
                     Exibe mais
                 </button>
-                <button className="btn button-hiden" id="btn-menos"> 
+                <button className={"btn "+itemHiden+""} id="btn-menos" onClick={hidenItem}> 
                     Exibe menos
                 </button>
             </div>

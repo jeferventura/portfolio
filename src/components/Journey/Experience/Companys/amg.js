@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaChevronRight } from 'react-icons/fa';
 
-import './assets/css/style.min.css';
+import '../assets/css/style.min.css';
 
 export function Amg(){
 

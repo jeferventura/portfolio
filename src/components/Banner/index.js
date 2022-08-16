@@ -9,9 +9,7 @@ import {
     FaBootstrap, 
     FaPhp, 
     FaJsSquare
-
 } from 'react-icons/fa'
-
 
 import './assets/css/style.min.css';
 
@@ -56,7 +54,5 @@ const Banner = () => {
             </div>
         </section>
     );
-
-
 }
 export default Banner;
