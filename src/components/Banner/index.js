@@ -1,5 +1,15 @@
 import React from 'react';
-import Typed from 'typed.js'
+import { 
+    FaDownload, 
+    FaRegEnvelope, 
+    FaFigma, 
+    FaCss3Alt,
+    FaHtml5, 
+    FaAngular, 
+    FaBootstrap, 
+    FaPhp, 
+    FaJsSquare
+} from 'react-icons/fa'
 
 import './assets/css/style.min.css';
 
@@ -12,32 +22,37 @@ const Banner = () => {
                     <div className="banner-wrapper-box">
                         <div className="banner-title">
                             <h1>Eu sou <span className="name-pessoal">Jeferson Ventura</span></h1>
-                            <span className="element">desenvolvedor front-end, designer gráfico, UX e UI design</span>
+                            <div className="element">
+                                <p>desenvolvedor front-end,</p> 
+                                <p>designer gráfico,</p>
+                                <p>UX e UI design</p>
+                            </div>
                         </div>
                         <div className="banner-buttons">
-                            <a href="#download" className="btn btn-bg-yellow btn-uppercase">download cv</a>
-                            <a href="#contato" className="btn btn-line-blue btn-uppercase">Contate-me</a>
+                            <a href="assets/docs/curriculo.pdf" className="btn btn-bg-yellow btn-uppercase" target="_blank">
+                                <FaDownload className="icon"/>download cv
+                            </a>
+                            <a href="/#contact" className="btn btn-line-blue btn-uppercase">
+                                <FaRegEnvelope className="icon" />Contate-me
+                            </a>
                         </div>
                         <div className="banner-icons">
-                            <img className="icons" src="/assets/images/banner/icons/css.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/html.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/js.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/figma.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/php.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/angular.svg" alt="CSS 3" />
-                            <img className="icons" src="/assets/images/banner/icons/bootstrap.svg" alt="CSS 3" />
+                            <FaCss3Alt className="icons" id="css"  alt="CSS 3" />
+                            <FaHtml5 className="icons" id="html" alt="HTML 5" />
+                            <FaJsSquare className="icons" id="js" alt="JavaScript" />
+                            <FaFigma className="icons obj-hiden" id="figma" alt="Figma" />
+                            <img className="icons" id="figma" src="/assets/images/banner/icons/figma.svg" alt="Figma" />
+                            <FaPhp className="icons" id="php" alt="PHP" />
+                            <FaAngular className="icons" id="angular"  alt="Angular" />
+                            <FaBootstrap className="icons" id="bootstrap" alt="Bootstrap" />
                         </div>
                     </div>
                     <div className="banner-photo-profile">
-                        <figure>
-                            <img src="/assets/images/banner/foto-perfil-bg.svg" alt="Foto do perfil" />
-                        </figure>
+                        <img src="/assets/images/banner/foto-perfil-bg.webp" alt="Foto do perfil" />
                     </div>
                 </div>
             </div>
         </section>
     );
-
-
 }
 export default Banner;

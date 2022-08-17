@@ -1,0 +1,426 @@
+/* telas pequenas - Largura de 200px até 480 px*/
+@mixin screen-small
+    @media screen and (min-width: 200px) and (max-width: 480px) 
+    
+        section.journey-section
+            
+            .container
+                padding-inline: 0
+
+                .title-content
+                    padding-inline: 20px
+
+            .journey 
+                margin:
+                    top: 40px 
+                    bottom: 60px
+
+
+                .title
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                
+                .title-content > p
+                    font-size: 16px
+
+                .journey-content
+                    margin-top: 8px
+
+                    & > .journey-experience
+                        padding-inline: 20px
+                        
+
+                        & > .journey-experience-box
+                            flex-direction: column
+
+                            .tab-content
+                                width: 100%
+                                margin: 0
+                                padding: 0
+
+                                h4
+                                    font-size: 16px
+
+                                .company-description-job 
+                                    > p
+                                        padding-bottom: 8px 
+
+                            .experience-menu
+                                flex-direction: row
+                                width: 100%
+
+                                .menu-single
+                                    display: flex
+                                    flex-direction: column
+                                    width: 100%
+                                    height: auto
+                                    margin-inline: 0
+                                    
+
+                                    ul 
+                                        display: flex
+                                        flex-direction: row
+                                        width: 100%
+
+                                        li.nav-item
+                                            display: inline-block
+                                            width: 50%
+
+                                            button.button-show
+                                                border-radius: 0
+                                                text-align: center
+
+
+                                            &:nth-child(3), &:nth-child(4)
+                                                display: none
+                                            
+
+
+            .journey-education
+                margin-top: 30px
+
+                .journey-content
+                    margin-top: 12px
+
+                    .education-box 
+                        overflow-x: scroll  
+                        flex-wrap: nowrap 
+                        width: 100%
+                        column-gap: 12px 
+                        padding-bottom: 12px 
+
+                        &-single 
+                            width: 100%  
+                            min-width: 260px
+                            max-width: 300px   
+                            padding: 16px  
+
+                            &:nth-of-type(3), &:nth-of-type(6)
+                                margin-right: 20px
+
+                            &:nth-of-type(1) 
+                                margin-left: 20px
+                            
+                            &:nth-of-type(4) 
+                                margin-left: -20px
+
+                            .infor-school 
+
+                                & p:nth-child(2)
+                                    letter-spacing: .5px   
+                                
+                                & p:nth-child(3)
+                                    letter-spacing: 0 
+                                    
+
+/* telas média- Largura de 481px até 768 px*/
+@mixin screen-media
+    @media screen and (min-width: 481px) and (max-width: 567px)
+        section.journey-section
+            
+            .container
+                padding-inline: 0
+
+                .title-content
+                    padding-inline: 20px
+
+            .journey 
+                margin:
+                    top: 40px 
+                    bottom: 60px
+
+                .title
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                
+                .title-content > p
+                    font-size: 16px
+
+                .journey-content
+                    margin-top: 8px
+
+                    .journey-experience
+                        padding-inline: 20px
+                        
+
+                        & > .journey-experience-box
+                            flex-direction: column
+
+                            .tab-content
+                                width: 100%
+                                margin: 0
+                                padding: 0
+
+                                h4
+                                    font-size: 16px
+
+                                .company-description-job > p
+                                    padding-bottom: 8px 
+
+                            .experience-menu
+                                flex-direction: row
+                                width: 100%
+
+                                .menu-single
+                                    display: flex
+                                    flex-direction: row
+                                    width: 100%
+                                    height: auto
+                                    margin-inline: 0
+                                    
+
+                                    ul 
+                                        display: flex
+                                        flex-direction: row
+                                        width: 100%
+
+                                        li.nav-item
+                                            display: inline-block
+                                            width: 50%
+
+                                            button.button-show
+                                                border-radius: 0
+                                                text-align: center
+
+
+                                            &:nth-child(3), &:nth-child(4)
+                                                display: none
+                                            
+                                        
+
+                .journey-education
+                    margin-top: 30px
+
+                    .journey-content
+                        margin-top: 12px
+
+                        .education-box 
+                            overflow-x: scroll  
+                            flex-wrap: nowrap  
+                            padding-bottom: 12px 
+                            column-gap: 12px 
+                            padding-bottom: 12px
+
+                            &-single 
+                                width: 100%  
+                                min-width: 260px
+                                max-width: 300px   
+                                padding: 16px  
+
+                                &:nth-of-type(3), &:nth-of-type(6)
+                                    margin-right: 20px
+
+                                &:nth-of-type(1) 
+                                    margin-left: 20px
+                                
+                                &:nth-of-type(4) 
+                                    margin-left: -20px
+
+                                .infor-school 
+                                    & p:nth-child(2)
+                                        letter-spacing: .5px   
+                                    
+                                    & p:nth-child(3)
+                                        letter-spacing: 0
+
+    @media screen and (min-width: 568px) and (max-width: 768px)
+        section.journey-section
+            
+            .container
+                padding-inline: 0
+
+                .title-content
+                    padding-inline: 20px
+
+            .journey  
+                margin:
+                    top: 40px 
+                    bottom: 60px
+
+                .title
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                
+                .title-content > p
+                    font-size: 16px
+
+                .journey-content
+                    margin-top: 8px
+
+                    & > .journey-experience
+                        padding-inline: 20px
+                        
+
+                        & > .journey-experience-box
+                            flex-direction: column
+
+                            .tab-content
+                                width: 100%
+                                margin: 0
+                                
+                                h4
+                                    font-size: 16px
+
+                                .company-description-job > p
+                                    padding-bottom: 8px 
+
+                            .experience-menu
+                                flex-direction: row
+                                width: 100%
+
+                                .menu-single
+                                    display: flex
+                                    flex-direction: row
+                                    width: 100%
+                                    height: auto
+                                    margin-inline: 0
+                                    
+
+                                    ul 
+                                        display: flex
+                                        flex-direction: row
+                                        width: 100%
+
+                                        li.nav-item
+                                            display: inline-block
+                                            width: 50%
+
+                                            button.button-show
+                                                border-radius: 0
+                                                text-align: center
+
+
+                                            &:nth-child(4)
+                                                display: none
+                                            
+                                
+                .journey-education
+                    margin-top: 30px
+
+                    .journey-content
+                        margin-top: 12px
+
+                        .education-box 
+                            overflow-x: scroll  
+                            flex-wrap: nowrap  
+                            width: 100%
+                            column-gap: 20px
+                            padding-bottom: 12px 
+
+                            &-single 
+                                width: 100%  
+                                min-width: 260px
+                                max-width: 300px   
+                                padding: 16px  
+
+                                &:nth-of-type(3), &:nth-of-type(6)
+                                    margin-right: 20px
+
+                                &:nth-of-type(1) 
+                                    margin-left: 20px
+                                
+                                &:nth-of-type(4) 
+                                    margin-left: -20px
+
+                                .infor-school 
+
+                                    & p:nth-child(2)
+                                        letter-spacing: .5px   
+                                    
+                                    & p:nth-child(3)
+                                        letter-spacing: 0 
+                                    
+/* telas grande- Largura de 769px até 1024 px*/
+@mixin screen-large
+    @media screen and (min-width: 769px) and (max-width: 920px)
+        section.journey-section
+            .journey
+                margin-top: 40px
+
+
+            .title
+                width: 100%
+                display: flex
+                justify-content: center
+
+                h2.section-title
+                    
+            .journey-content
+                margin-top: 12px
+
+                .journey-experience
+
+                    .journey-experience-box
+                        flex-direction: column
+
+                        .tab-content
+                            width: 100%
+                            margin: 0
+                            padding: 0
+
+                        .experience-menu
+                            flex-direction: row
+                            width: 100%
+
+                        .menu-single
+                            display: flex
+                            flex-direction: row
+                            flex-wrap: wrap
+                            width: 100%
+                            height: auto
+                            margin-inline: 0
+
+                            ul 
+                                display: flex
+                                flex-direction: row
+                                width: 100%
+
+                                li.nav-item
+                                    display: inline-block
+                                    width: calc(100%/4)
+
+                                    button.button-show
+                                        border-radius: 0
+                                        text-align: center
+
+
+            .journey-education
+                margin-top: 30px
+
+                .education-box 
+                    overflow-x: hidden
+                    padding-bottom: 12px 
+                    min-width: 220px
+                    width: 100%
+                    column-gap: 12px
+                    
+                    &-single 
+                        width: calc(100% /2 - 12px)
+                        min-width: 260px
+                        padding: 24px
+
+                        &:nth-of-type(3), &:nth-of-type(6)
+                            margin-right: 0
+
+                        &:nth-of-type(4)
+                            display: block!important
+
+                        .infor-school 
+
+                            & p:nth-child(2)
+                                letter-spacing: .5px   
+                            
+                            & p:nth-child(3)
+                                letter-spacing: 0 
+
+/* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
+@mixin screen-extralarge
+    @media screen and (min-width: 920px)
+        section.journey-section
+            .title
+                width: 100%
+                display: flex
+                justify-content: center

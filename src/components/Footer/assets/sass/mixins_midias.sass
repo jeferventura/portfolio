@@ -1,0 +1,69 @@
+@use '../../../../_assets/sass/variables'
+/* telas pequenas - Largura de 200px até 480 px*/
+@mixin screen-small
+    @media screen and (min-width: 200px) and (max-width: 480px) 
+
+        footer
+            .container
+                flex-direction: column-reverse
+
+                .footer-box
+                    text-align: center
+                    padding-bottom: 8px
+
+                    p
+                        padding-bottom: 2px
+
+                    &:nth-child(1)
+                        border-top: 1px solid variables.$blue-color-hover
+
+                .box-icons
+                    justify-content: center
+                    column-gap: 0
+                    margin-block: 12px
+                    flex-wrap: wrap
+                    row-gap: 8px
+
+                    .footer-icons-box
+                        padding: 0
+                        width: calc((100% / 6) - 4px)
+    
+/* telas média- Largura de 481px até 768 px*/
+@mixin screen-media
+    @media screen and (min-width: 481px) and (max-width: 768px)
+        
+        footer
+            .container
+                flex-direction: column-reverse
+
+                .footer-box
+                    text-align: center
+                    padding-bottom: 12px
+
+                    p
+                        padding-bottom: 2px
+
+                    &:nth-child(1)
+                        border-top: 1px solid variables.$blue-color-hover
+
+                .box-icons
+                    justify-content: center
+                    column-gap: 0
+                    margin-block: 12px
+                    flex-wrap: wrap
+                    row-gap: 8px
+
+                    .footer-icons-box
+                        padding: 6px 0
+                        width: calc((100% / 6) - 12px)
+                        margin: 0
+
+
+/* telas grande- Largura de 769px até 1024 px*/
+@mixin screen-large
+    @media screen and (min-width: 769px) and (max-width: 1024px)
+
+    
+/* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
+@mixin screen-extralarge
+    @media screen and (min-width: 1220px)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBriefcase } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 
 import { Education } from  './Education';
 import { Experience }  from  './Experience';
@@ -9,7 +9,7 @@ import './assets/css/style.min.css';
 const Journey = () => {
 
     return ( 
-        <section>
+        <section className="journey-section">
             <div className="journey container">
                 <div className="title">
                     <h2 className="section-title">Minhas Jornadas</h2>
@@ -24,7 +24,7 @@ const Journey = () => {
                 </div>
                 <div className="journey-education">
                     <div className="title-content">
-                        <FaBriefcase className="icons" /> <p>Educação</p>
+                        <FaGraduationCap className="icons" /> <p>Educação</p>
                     </div>
                     <div className="journey-content">
                         <Education />

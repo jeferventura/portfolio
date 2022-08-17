@@ -1,6 +1,45 @@
 @use '../../../../_assets/sass/variables'
 @use '../../../../_assets/sass/mixins'
-    
+@use 'mixins_midias'
+
+.send-menssage-sucess
+    font-size: 15px
+    border: 
+        block-start-width: .8px
+        block-end-width: .8px
+        inline-start-width: 5px
+        inline-end-width: .8px
+        style: solid
+        color: #2e9714
+    color: #288d0f
+    display: block
+    width: 70%
+    padding: 12px 16px
+    margin-bottom: 20px
+    border-radius: 5px
+    font-weight: 500
+    background-color: #a6f593
+    letter-spacing: .8px
+
+.send-menssage-error
+    font-size: 15px
+    border: 
+        block-start-width: .8px
+        block-end-width: .8px
+        inline-start-width: 5px
+        inline-end-width: .8px
+        style: solid
+        color: #8d0808
+    color: #8d0808
+    display: block
+    width: 70%
+    padding: 12px 16px
+    margin-bottom: 20px
+    border-radius: 5px
+    font-weight: 500
+    background-color: #ee8484
+    letter-spacing: .8px
+
 section.contato
     padding:
         top: 50px
@@ -58,13 +97,20 @@ section.contato
             &-groups
                 display: flex
                 align-items: center
+                flex-direction: row
                 gap: 5px
                 padding-bottom: 10px 
+
+                a
+                    display: flex
+                    align-items: center
+                    flex-direction: row
+                    flex-wrap: nowrap
 
     form.form-contato
         width: 70%
 
-        div.align-button
+        div.align-button 
             display: flex
             flex-direction: row
             justify-content: flex-end
@@ -73,19 +119,32 @@ section.contato
         .form-group
             margin-bottom: 24px
 
+            span.text-error
+                color: #f01e4c
+                font-size: 13px
+                font-weight: 600
+                padding-top: 4px
+                display: flex
+                flex-direction: row
+                align-items: center
+
+                .icon
+                    fill: #f01e4c
+                    margin-right: 8px
+
             label
                 display: block
                 margin-bottom: 4px
                 font-weight: 450
 
             input
-                
                 height: 35px
                 width: 100%
 
             textarea
                 height: 120px
                 padding-top: 10px
+                resize: vertical
 
             button
                 background-color: variables.$blue-color
@@ -114,3 +173,9 @@ section.contato
 
                 &:nth-of-type(2)
                     width: 40%
+
+@include mixins_midias.screen-small
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge
