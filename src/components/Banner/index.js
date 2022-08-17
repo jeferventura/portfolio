@@ -48,7 +48,7 @@ const Banner = () => {
                         </div>
                     </div>
                     <div className="banner-photo-profile">
-                        <img src="/assets/images/banner/foto-perfil-bg.svg" alt="Foto do perfil" />
+                        <img src="/assets/images/banner/foto-perfil-bg.webp" alt="Foto do perfil" />
                     </div>
                 </div>
             </div>

@@ -11,9 +11,9 @@
         top: 4px 
         bottom: 8px
 
-@mixin bg-image-portfolio($img)
+@mixin bg-image($img)
     background:
-        image: url('/public/assets/images/portfolio/#{$img}')
+        image: url('/public/assets/images/#{$img}')
         repeat: no-repeat
         size: 100%
         position: top
@@ -109,7 +109,7 @@
                                         color: #FFF
                                     
                                     span
-                                        .icon
+                                        svg
                                             fill:#FFF
 
         //banner dark-mode

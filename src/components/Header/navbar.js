@@ -56,14 +56,14 @@ export function NavbarMobile() {
                 <div className="button-mode">
                     <ToggleTheme />
                 </div>
-                <d iv className={"navbar "+activeNavbarMobile+""}>
-                    <span> <FaTimes onClick={hidenNavbarMobile}/></span>
+                <div className={"navbar "+activeNavbarMobile+""} onClick={hidenNavbarMobile}>
+                    <span> <FaTimes className="icon" onClick={hidenNavbarMobile}/></span>
                     <a href="#home" onClick={hidenNavbarMobile} >Home</a>
                     <a href="#about" onClick={hidenNavbarMobile}>Sobre</a>
                     <a href="#journey" onClick={hidenNavbarMobile}>Jornada</a>
                     <a href="#portfolio" onClick={hidenNavbarMobile}>Portfolio</a>
                     <a href="#contact" onClick={hidenNavbarMobile}>Contato</a>
-                </d>
+                </div>
             </div>
         </nav>
     );

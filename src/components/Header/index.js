@@ -12,8 +12,8 @@ const Header = () => {
                     <div className="logotipo">
                         <figure>
                             <a href="#home">
-                                <img src="assets/images/header/logotipo.svg" alt="logotipo" className="logotipo-color"/>
-                                <img src="assets/images/header/logotipo-white.svg" alt="logotipo" className="logotipo-white"/>
+                                <img src="assets/images/header/logotipo.webp" alt="logotipo" className="logotipo-color"/>
+                                <img src="assets/images/header/logotipo-white.webp" alt="logotipo" className="logotipo-white"/>
                             </a>
                         </figure>
                     </div>

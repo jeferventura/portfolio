@@ -12,16 +12,20 @@ import './assets/css/style.min.css';
 export function Education(){
 
     const [itemHiden, setItemHiden] = useState('obj-hiden');
-    const [changeItem, setChangeItem] = useState('');
+    const [changeItem, setChangeItem] = useState('Exibe mais');
+
+    /**
+     * If the item is hidden, show it. If the item is not hidden, hide it.
+     */
 
     function showItem(){
-        setItemHiden('');
-        setChangeItem('obj-hiden');
-    }
-
-    function hidenItem(){
-        setItemHiden('obj-hiden');
-        setChangeItem('');
+        if(itemHiden === 'obj-hiden'){
+            setItemHiden('');
+            setChangeItem('Exibe menos');
+        }else{
+            setItemHiden('obj-hiden');
+            setChangeItem('Exibe mais');
+        }
     }
 
 
@@ -48,11 +52,8 @@ export function Education(){
                 </div>
             </div>
             <div className="buttom-red-More">
-                <button className={"btn "+changeItem+""} id="btn-mais" onClick={showItem}> 
-                    Exibe mais
-                </button>
-                <button className={"btn "+itemHiden+""} id="btn-menos" onClick={hidenItem}> 
-                    Exibe menos
+                <button className="btn" id="btn-mais" onClick={showItem}> 
+                    {changeItem}
                 </button>
             </div>
         </div>

@@ -9,6 +9,7 @@
     <meta name="description"
       content="website desenvolvido por Jeferson Ventura, sendo este o portfólio pessoal de seus trabalhos como desenvolverdor front-end, design e UX e UI design. "
     />
+
     <!-- includes links -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -18,7 +19,7 @@
     
     <title>Portólio Web - Jeferson Ventura</title>
   </head>
-  <body onLoad="loading()">
+  <body onLoad="loading(setTimeout(3))">
 
     <div class="box-loading">
       <div class="preloader"></div>
@@ -27,6 +28,14 @@
     <div id="root"></div> 
     
     <script src="assets/js/scripts.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("E7s48j3b_Fiw7OCwz");
+      })();
+    </script>
 
   </body>
 </html>

@@ -2,6 +2,44 @@
 @use '../../../../_assets/sass/mixins'
 @use 'mixins_midias'
 
+.send-menssage-sucess
+    font-size: 15px
+    border: 
+        block-start-width: .8px
+        block-end-width: .8px
+        inline-start-width: 5px
+        inline-end-width: .8px
+        style: solid
+        color: #2e9714
+    color: #288d0f
+    display: block
+    width: 70%
+    padding: 12px 16px
+    margin-bottom: 20px
+    border-radius: 5px
+    font-weight: 500
+    background-color: #a6f593
+    letter-spacing: .8px
+
+.send-menssage-error
+    font-size: 15px
+    border: 
+        block-start-width: .8px
+        block-end-width: .8px
+        inline-start-width: 5px
+        inline-end-width: .8px
+        style: solid
+        color: #8d0808
+    color: #8d0808
+    display: block
+    width: 70%
+    padding: 12px 16px
+    margin-bottom: 20px
+    border-radius: 5px
+    font-weight: 500
+    background-color: #ee8484
+    letter-spacing: .8px
+
 section.contato
     padding:
         top: 50px
@@ -80,6 +118,19 @@ section.contato
 
         .form-group
             margin-bottom: 24px
+
+            span.text-error
+                color: #f01e4c
+                font-size: 13px
+                font-weight: 600
+                padding-top: 4px
+                display: flex
+                flex-direction: row
+                align-items: center
+
+                .icon
+                    fill: #f01e4c
+                    margin-right: 8px
 
             label
                 display: block
