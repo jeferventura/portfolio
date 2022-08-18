@@ -27,7 +27,7 @@
                     opacity: .4
                     left: -35%
                     z-index: -2
-                    object-fit: fill
+                    object-fit: contain
 
 
                 .about-information-box
@@ -51,10 +51,13 @@
                             bottom: 10px  
 
                     &:nth-of-type(3)
-                        padding-right: 0
+                        padding-inline: 0
 
                     .carousel-container
                         padding-right: 0
+
+                        .carousel-title
+                            padding-left: 20px
                         
                         .carousel-box
                             column-gap: 8px
@@ -70,6 +73,9 @@
 
                                 &:last-of-type
                                     margin-right: 20px
+                                
+                                &:first-of-type
+                                    margin-left: 20px
 
 
 /* telas média- Largura de 481px até 768 px*/
@@ -101,7 +107,7 @@
                     opacity: .4
                     left: -25%
                     z-index: -2
-                    object-fit: fill
+                    object-fit: contain
 
 
                 .about-information-box
@@ -125,11 +131,14 @@
                             bottom: 10px  
 
                     &:nth-of-type(3)
-                        padding-right: 0
+                        padding-inline: 0
 
                     .carousel-container
                         padding-right: 0
-                        
+
+                        .carousel-title
+                            padding-left: 20px
+
                         .carousel-box
                             column-gap: 8px
                             overflow-scrolling: touch
@@ -144,6 +153,9 @@
 
                                 &:last-of-type
                                     margin-right: 20px
+
+                                &:first-of-type
+                                    margin-left: 20px
 
 
 /* telas grande- Largura de 769px até 1024 px*/
@@ -178,7 +190,7 @@
                     opacity: 1
                     right: 30%
                     z-index: -2
-                    object-fit: fill
+                    object-fit: contain
 
 
                 .about-information-box

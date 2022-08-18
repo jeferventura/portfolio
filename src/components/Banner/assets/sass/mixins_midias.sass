@@ -8,10 +8,11 @@
 
             .banner-container
                 background: 
-                    image: url('/public/assets/images/banner/foto-perfil-bg.svg')
+                    image: url('/public/assets/images/banner/foto-perfil-bg.webp')
                     repeat: no-repeat
-                    position: 110% bottom
-                    size: 60% 100%
+                    position: 100% bottom
+                    clip: border-box
+                    size: contain
 
                 .banner-wrapper
                     gap: 0
@@ -92,11 +93,11 @@
 
             .banner-container
                 background: 
-                    image: url('/public/assets/images/banner/foto-perfil-bg.svg')
+                    image: url('/public/assets/images/banner/foto-perfil-bg.webp')
                     repeat: no-repeat
-                    position: 110%
-                    size: 100% cover
-                    background-origin: 0
+                    position: 100%
+                    clip: border-box
+                    size: contain
 
             .banner-wrapper
                 gap: 4px
@@ -212,11 +213,12 @@
 
             .banner-container
                 background: 
-                    image: url('/public/assets/images/banner/foto-perfil-bg.svg')
+                    image: url('/public/assets/images/banner/foto-perfil-bg.webp')
                     repeat: no-repeat
                     position: right
-                    size: 100% cover
-                    background-origin: 0
+                    clip: border-box
+                    size: contain
+                    
 
             .banner-wrapper
                 gap: 2%
@@ -322,7 +324,7 @@
                                 font-size: 13px!important
 
                                 &:nth-child(3)
-                                display: inline-block
+                                    display: inline-block
 
 /* telas grande- Largura de 769px até 1024 px*/
 @mixin screen-large

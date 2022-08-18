@@ -11,9 +11,9 @@
         top: 4px 
         bottom: 8px
 
-@mixin bg-image-portfolio($img)
+@mixin bg-image($img)
     background:
-        image: url('/public/assets/images/portfolio/#{$img}')
+        image: url('/public/assets/images/#{$img}')
         repeat: no-repeat
         size: 100%
         position: top
@@ -37,7 +37,7 @@
     @media screen and (min-width: 200px) and (max-width: 480px) 
         body
             p
-                font-size: .8rem
+                font-size: .9rem
 
             .container
                 padding-inline: 16px
@@ -74,209 +74,219 @@
 
 
 @mixin darkmode
-    
-    div.app-dark
-        background-color: variables.$bg-background-dark-secondary
+    html.dark
+        div.App
+            background-color: variables.$bg-background-dark-secondary
 
-    //header dark-mode
-    header.header-dark
-        background-color: variables.$bg-background-dark-primary
-        border-bottom: 1px solid rgba(101, 106, 109, 0.631)
+        //header dark-mode
+        header
+            background-color: variables.$bg-background-dark-primary
+            border-bottom: 1px solid rgba(101, 106, 109, 0.631)
 
-        .header
-            .container
-                .logotipo
-                    figure
-                        .logotipo-color
-                            display: none
-                        
-                        .logotipo-white
-                            display: block
-                .menu
-                    nav.navbar-main
-                        .navbar-desktop
-                            a
-                                color: #FFF
-                    nav
-                        .navbar-mobile
-                            #nav-menu
-                                .icon
-                                    fill:#FFF
-                            .navbar
-                                background-color: rgba(0,0 ,0 ,0.5 )
-
+            .header
+                .container
+                    .logotipo
+                        figure
+                            .logotipo-color
+                                display: none
+                            
+                            .logotipo-white
+                                display: block
+                    .menu
+                        nav.navbar-main
+                            .navbar-desktop
                                 a
                                     color: #FFF
+                        nav
+                            .navbar-mobile
+                                #nav-menu
+                                    .icon
+                                        fill:#FFF
+                                .navbar
+                                    background-color: rgba(0,0 ,0 ,0.5 )
 
-    //banner dark-mode
-    section.banner-dark
-        background-color: variables.$bg-background-dark-primary
-
-        .banner-container
-            .banner-wrapper
-                .banner-wrapper-box
-                    .banner-title
-                        h1, span.name-pessoal
-                            color: white
-                    .element p
-                        color: variables.$yellow-color
-                    
-                    .banner-buttons
-                        a.btn-line-blue
-                            color: white
-
-                            .icon
-                                fill: #FFF
-
-                    .banner-icons
-                        svg#css, svg#html,  svg#js, svg#figma, svg#php, svg#angular, svg#bootstrap
-                            fill: #ffffff
-
-    //about section style darkmode
-    section.about-dark
-        .container
-            .about
-                .about-information
-                    .about-information-box
-                        h2.section-title
-                            color: #fff
-                            font-weight: normal
-
-                        .skills-box-title p, .skills-box-title span
-                                font-weight: normal
-                                color: #fff
-                                filter: drop-shadow(1px .9px .8px black)
-                                letter-spacing: .8px
-                    .box-text p
-                        font-weight: normal
-                        color: #fff
-                        
-                    .carousel-container
-                        .carousel-title
-                            h5
-                                color: #fff
-                                letter-spacing: .8px
-
-    //about section style darkmode
-    section.journey-dark
-        .journey
-            .title
-                h2.section-title
-                    color: #FFF
-
-            .journey-experience
-                .title-content
-                    svg.icons
-                        fill: #fff
-
-                    p
-                        color: #FFF
-
-                .journey-content
-                    .journey-experience-box
-                        .experience-menu
-                            .menu-single
-                                li
-                                    button.button-show
-                                        background-color: variables.$bg-background-dark-primary
+                                    a
                                         color: #FFF
-
-                                        &:hover
-                                            background-color: variables.$blue-color
-                                            color: #FFF
-
-                                    button.selected
-                                        background-color: variables.$blue-color
-                                        color: #FFF
-
                                     
-                        .experience-company
-                            .company-box
-                                h4, p
-                                    color: #FFF
-                                
-                                .company-description-job
-                                    svg.icons
-                                        fill: #fff
-            .journey-education
-                .title-content
-                    svg.icons
-                        fill: #fff
+                                    span
+                                        svg
+                                            fill:#FFF
 
-                    p
+        //banner dark-mode
+        section.banner
+            background-color: variables.$bg-background-dark-primary
+
+            .banner-container
+                .banner-wrapper
+                    .banner-wrapper-box
+                        .banner-title
+                            h1, span.name-pessoal
+                                color: white
+                        .element p
+                            color: variables.$yellow-color
+                        
+                        .banner-buttons
+                            a.btn-line-blue
+                                color: white
+                                border: 2px solid #FFF
+
+                                .icon
+                                    fill: #FFF
+
+                        .banner-icons
+                            svg#css, svg#html,  svg#js, svg#figma, svg#php, svg#angular, svg#bootstrap
+                                fill: #ffffff
+                                display: block!important
+                                
+                            
+                            img#figma
+                                display: none
+
+        //about section style darkmode
+        section.about-section
+            .container
+                .about
+                    .about-information
+                        .about-information-box
+                            h2.section-title
+                                color: #fff
+                                font-weight: normal
+
+                            .skills-box-title p, .skills-box-title span
+                                    font-weight: normal
+                                    color: #fff
+                                    filter: drop-shadow(1px .9px .8px black)
+                                    letter-spacing: .8px
+                        .box-text p
+                            font-weight: normal
+                            color: #fff
+                            
+                        .carousel-container
+                            .carousel-title
+                                h5
+                                    color: #fff
+                                    letter-spacing: .8px
+
+        //about section style darkmode
+        section.journey-section
+            .journey
+                .title
+                    h2.section-title
                         color: #FFF
 
-                .journey-content
-                    .education-box
-                        &-single
-                            background-color: variables.$bg-background-dark-primary
+                .journey-experience
+                    .title-content
+                        svg.icons
+                            fill: #fff
 
-                            .box-school
-                                p.school-subtitle
-                                    color: variables.$yellow-color
-                                
-                                p.school-course-title, p.school-description, p.school-prevision
-                                    color: #FFF
-
-
-
-    //portfolio dark-mode
-    section.portfolio-dark
-
-        & > .portfolio-container
-            background-color: variables.$bg-background-dark-primary!important
-    
-        div.format-bg
-            background-color: variables.$bg-background-dark-primary
-    
-
-    //contato  dark-mode
-    section.contato-dark
-        background-color: variables.$bg-background-dark-secondary!important
-
-        .container
-            h2.section-title
-                color: #FFF!important
-
-            div.icons-contato
-                .icon-groups
-                    a 
                         p
                             color: #FFF
 
-                        svg.icon
-                            fill: #FFF
-            form.form-contato
-                .form-group
-                    label
-                        color: #FFF
-                        font-weight: normal
+                    .journey-content
+                        .journey-experience-box
+                            .experience-menu
+                                .menu-single
+                                    li
+                                        button.button-show
+                                            background-color: variables.$bg-background-dark-primary
+                                            color: #FFF
 
-    //footer dark-mode
-    footer.footer-dark
-        background-color: variables.$bg-background-dark-primary
+                                            &:hover
+                                                background-color: variables.$blue-color
+                                                color: #FFF
 
-        .container
+                                        button.selected
+                                            background-color: variables.$blue-color
+                                            color: #FFF
 
-            .box-icons
-                .codepen, .linkedin, .github, .whatsapp, .instagram, .behance
-                    &:hover
-                        background-color: #2b333f
-                        border-radius: 5px
+                                        
+                            .tab-content
+                                .company-box
+                                    h4, p
+                                        color: #FFF
+                                    
+                                    .company-description-job
+                                        svg.icons
+                                            fill: #fff
+                .journey-education
+                    .title-content
+                        svg.icons
+                            fill: #fff
 
-                    &:hover .icons
-                        fill: #FFF
+                        p
+                            color: #FFF
 
-                    &:hover .icon-tooltip
-                        background: #2b333f
-                    
-                    &:hover .icon-tooltip::before
-                        background-color: #2b333f
-                        z-index: -1
+                    .journey-content
+                        .education-box
+                            &-single
+                                background-color: variables.$bg-background-dark-primary
 
-    @media screen and (min-width: 200px) and (max-width: 480px) 
-        footer.footer-dark
+                                .box-school
+                                    p.school-subtitle
+                                        color: variables.$yellow-color
+                                    
+                                    p.school-course-title, p.school-description, p.school-prevision
+                                        color: #FFF
+
+
+
+        //portfolio dark-mode
+        section.portfolio
+
+            & > .portfolio-container
+                background-color: variables.$bg-background-dark-primary!important
+        
+            div.format-bg
+                background-color: variables.$bg-background-dark-primary
+        
+
+        //contato  dark-mode
+        section.contato
+            background-color: variables.$bg-background-dark-secondary!important
+
             .container
-                .footer-box
-                    &:nth-child(1)
-                        border-top: 1px solid #a2a2a3
+                h2.section-title
+                    color: #FFF!important
+
+                div.icons-contato
+                    .icon-groups
+                        a 
+                            p
+                                color: #FFF
+
+                            svg.icon
+                                fill: #FFF
+                form.form-contato
+                    .form-group
+                        label
+                            color: #FFF
+                            font-weight: normal
+
+        //footer dark-mode
+        footer
+            background-color: variables.$bg-background-dark-primary
+
+            .container
+
+                .box-icons
+                    .codepen, .linkedin, .github, .whatsapp, .instagram, .behance
+                        &:hover
+                            background-color: #2b333f
+                            border-radius: 5px
+
+                        &:hover .icons
+                            fill: #FFF
+
+                        &:hover .icon-tooltip
+                            background: #2b333f
+                        
+                        &:hover .icon-tooltip::before
+                            background-color: #2b333f
+                            z-index: -1
+
+        @media screen and (min-width: 200px) and (max-width: 768px) 
+            footer
+                .container
+                    .footer-box
+                        &:nth-child(1)
+                            border-top: 1px solid #a2a2a3
