@@ -18,5 +18,4 @@ export const FormValidations = yup.object().shape({
     mensagem: yup
         .string()
         .required('Mensagem não foi informado'),
-
 })
