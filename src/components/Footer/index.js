@@ -17,42 +17,42 @@ const Footer = () => {
                         <div className="icon-tooltip">
                             Codepen
                         </div>
-                        <FaCodepen className="icons"/>
+                        <a href="https://codepen.io/jeferventura" target="_blank" rel="noopener noreferrer"><FaCodepen className="icons"/></a>
                     </div>
 
                     <div className="footer-icons-box linkedin">
                         <div className="icon-tooltip">
                             LinkedIn
                         </div>
-                        <FaLinkedinIn className="icons" />
+                        <a href="https://www.linkedin.com/in/jefersonventura" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className="icons" /></a>
                     </div>
 
                     <div className="footer-icons-box github">
                         <div className="icon-tooltip">
                             GitHub
                         </div>
-                        <FaGithub className="icons" />
+                        <a href="https://github.com/jeferventura/" target="_blank" rel="noopener noreferrer"> <FaGithub className="icons" /></a>
                     </div>
 
                     <div className="footer-icons-box whatsapp">
                         <div className="icon-tooltip">
                             WhatsApp
                         </div>
-                        <FaWhatsapp className="icons" />
+                        <a href="https://wa.me/message/AJJJGGAIOG5PP1" target="_blank" rel="noopener noreferrer" ><FaWhatsapp className="icons" /></a>
                     </div>
 
                     <div className="footer-icons-box instagram">
                         <div className="icon-tooltip">
                             Instagram
                         </div>
-                        <FaInstagram className="icons" />
+                        <a href="https://www.instagram.com/jeferventura" target="_blank" rel="noopener noreferrer" ><FaInstagram className="icons" /></a>
                     </div>
 
                     <div className="footer-icons-box behance">
                         <div className="icon-tooltip">
                             Behance
                         </div>
-                        <FaBehance className="icons" />
+                        <a href="https://behance.net/jefersonventura/" target="_blank" rel="noopener noreferrer" ><FaBehance className="icons" /></a>
                     </div>
                 </div>
             </div>

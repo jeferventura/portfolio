@@ -3,8 +3,6 @@ import { Input, TextArea } from './FormControlled/Input'
 import { FormValidations } from './FormControlled/FormValidations';
 import { ValidationError } from 'yup';
 import emailjs from '@emailjs/browser';
-import ReactDOM from "react-dom";
-import { useFormik } from "formik";
 
 import  {FaInstagram, FaWhatsapp, FaTelegramPlane, FaRegEnvelope, FaCheck } from 'react-icons/fa';
 import './assets/css/style.min.css';

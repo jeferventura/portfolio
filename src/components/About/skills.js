@@ -6,7 +6,7 @@ export function Skills(){
             <div className="skills-box"> 
                 <div className="skills-box-title">
                     <p>HTML</p>
-                    <span>90%</span>
+                    <span className="porcent porcent-90">90%</span>
                 </div>
                 <div className="skills-progress-bar">
                     <span className="progress-bar bar-90"></span>
@@ -16,7 +16,7 @@ export function Skills(){
             <div className="skills-box"> 
                 <div className="skills-box-title">
                     <p>CSS</p>
-                    <span>90%</span>
+                    <span className="porcent porcent-90">90%</span>
                 </div>
                 <div className="skills-progress-bar">
                     <span className="progress-bar bar-90"></span>
@@ -26,7 +26,7 @@ export function Skills(){
             <div className="skills-box"> 
                 <div className="skills-box-title">
                     <p>JavaScript</p>
-                    <span>83%</span>
+                    <span className="porcent porcent-83">83%</span>
                 </div>
                 <div className="skills-progress-bar">
                     <span className="progress-bar bar-83"></span>
@@ -36,7 +36,7 @@ export function Skills(){
             <div className="skills-box"> 
                 <div className="skills-box-title">
                     <p>React.Js</p>
-                    <span>51%</span>
+                    <span className="porcent porcent-51">51%</span>
                 </div>
                 <div className="skills-progress-bar">
                     <span className="progress-bar bar-51"></span>
@@ -46,7 +46,7 @@ export function Skills(){
             <div className="skills-box"> 
                 <div className="skills-box-title">
                     <p>UX & UI Design </p>
-                    <span>63%</span>
+                    <span className="porcent porcent-63">63%</span>
                 </div>
                 <div className="skills-progress-bar">
                     <span className="progress-bar bar-63"></span>

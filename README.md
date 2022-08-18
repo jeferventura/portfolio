@@ -1,10 +1,9 @@
-# Getting Started with Create React App
+# Portfólio Pessoal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto criado com ReactJS, para apresentar o meu trabalho como desenvolvedor front-end e designer gráfico, além de alguns trabalhos como UX & UI design.
 
-## Available Scripts
-
-In the project directory, you can run:
+## Layouts
+Os layouts foram desenvolvidos no Figma, pode ser consultado no [perfil do Bahance](https://)
 
 ### `npm start`
 

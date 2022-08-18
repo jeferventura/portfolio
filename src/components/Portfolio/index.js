@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Modal } from './modal'
 
 import { 
     Agencia, 
@@ -25,6 +25,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="format-bg"></div>
+            <Modal />
         </section>
     );
     
