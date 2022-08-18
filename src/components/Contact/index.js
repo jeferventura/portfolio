@@ -3,17 +3,20 @@ import { Input, TextArea } from './FormControlled/Input'
 import { FormValidations } from './FormControlled/FormValidations';
 import { ValidationError } from 'yup';
 import emailjs from '@emailjs/browser';
+import ReactDOM from "react-dom";
+import { useFormik } from "formik";
 
 import  {FaInstagram, FaWhatsapp, FaTelegramPlane, FaRegEnvelope, FaCheck } from 'react-icons/fa';
 import './assets/css/style.min.css';
 
 
-const initialForm = {
-    name: '',
-    email: '',
-    celular: '',
-    mensagem: '',
-};
+    const initialForm = {
+        name: '',
+        email: '',
+        celular: '',
+        mensagem: '',
+    };
+
 
 const Contact = () => {
 
@@ -49,6 +52,7 @@ const Contact = () => {
 
 
     function sendEmail(e) {
+
         e.preventDefault();
 
         emailjs.sendForm('service_7qgczb9', 'template_8jiryc4', form.current, 'E7s48j3b_Fiw7OCwz')
@@ -79,6 +83,7 @@ const Contact = () => {
         e.target.reset();
     }
 
+
     return (
 
             <section className="contato">
@@ -86,29 +91,30 @@ const Contact = () => {
                     <h2 className="section-title">Contato</h2>
                     <div className="icons-contato">
                         <div className="icon-groups">
-                            <a href="https://www.instagram.com/jeferventura" target="_blank" rel="noreferrer">
+                            <a href="https://www.instagram.com/jeferventura" rel="_blank" >
                                 <FaInstagram className="icon" /> <p>jeferventura</p>
                             </a>
                         </div>
                         <div className="icon-groups">
-                            <a href="mailto:jeferventura@gmail.com"  target="_blank" rel="noreferrer">
+                            <a href="mailto:jeferventura@gmail.com"  rel="_blank" >
                                 <FaRegEnvelope className="icon" /> <p>jefersonventura91@gmail.com</p>
                             </a>
                         </div>
                         <div className="icon-groups">
-                            <a href="https://wa.me/message/AJJJGGAIOG5PP1" target="_blank" rel="noreferrer">
+                            <a href="https://wa.me/message/AJJJGGAIOG5PP1" rel="_blank" >
                                 <FaWhatsapp className="icon"  /> <p>+55 71 9 9264-7669</p>
                             </a>
                         </div>
                         <div className="icon-groups"> 
-                            <a href="https://t.me/jeferventura" target="_blank" rel="noreferrer">
+                            <a href="https://t.me/jeferventura" rel="_blank" >
                                 <FaTelegramPlane className="icon" />  <p>+55 71 9 9264-7669</p>
                             </a>
                         </div>
                     </div>
                     <p className="send-menssage-sucess obj-hiden" id="msg-success"></p>
                     <p className="send-menssage-error obj-hiden" id="msg-error"></p>
-                    <form className="form-contato" id="form-contato" onSubmit={sendEmail} ref={form} >
+                    <span className="text-error" id="text-error"></span>
+                    <form className="form-contato" id="form-contato"  ref={form} onSubmit={sendEmail}>
                         <Input 
                             name="nome"
                             type="text"
@@ -117,6 +123,7 @@ const Contact = () => {
                             placeholder="Digite seu nome"
                             error={errors.name}
                         />
+
                         <div className="form-box-group">
                         <Input 
                             name="e-mail"

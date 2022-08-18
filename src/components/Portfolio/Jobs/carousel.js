@@ -9,7 +9,7 @@ export const Agencia = () => {
             <div className="title-carousel-box">
                 <p>Site Agência de Viagens <span>| Ficticio |</span></p>
                 <div className="icons-carousel-box">
-                    <a href="https://github.com/jeferventura/site_AgenciaViagens" target="_blank" >
+                    <a href="https://github.com/jeferventura/site_AgenciaViagens" rel='_blank'>
                         <FaGithubSquare className="icon" />
                     </a>
                 </div>
@@ -25,7 +25,7 @@ export const Hotel = () => {
             <div className="title-carousel-box">
                 <p>Site Hotel <span>| Ficticio |</span></p>
                 <div className="icons-carousel-box">
-                    <a href="https://github.com/jeferventura/site_Pousada" target="_blank" >
+                    <a href="https://github.com/jeferventura/site_Pousada" rel='_blank' >
                         <FaGithubSquare className="icon" />
                     </a>
                 </div>
@@ -40,7 +40,7 @@ export const Clinica = () => {
             <div className="title-carousel-box">
                 <p>Site Clínica Médica <span>| Ficticio |</span></p>
                 <div className="icons-carousel-box">
-                    <a href="https://github.com/jeferventura/siteClinica" target="_blank" >
+                    <a href="https://github.com/jeferventura/siteClinica" rel='_blank' >
                         <FaGithubSquare className="icon" />
                     </a>
                 </div>
