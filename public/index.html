@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- metas HTML -->
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FFFFFF" />
-    <meta name="description"
+    <meta
+      name="description"
       content="website desenvolvido por Jeferson Ventura, sendo este o portfólio pessoal de seus trabalhos como desenvolverdor front-end, design e UX e UI design. "
     />
 
     <!-- includes links -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      id="leform-remote"
+      src="https://sistema.previmos.com.br/form/content/plugins/halfdata-green-forms/js/leform.min.js?ver=1.39"
+      data-handler="https://sistema.previmos.com.br/form/ajax.php"
+    ></script>
 
     <!-- links externos - Google Fonts -->
-  
-    
+
     <title>Portólio Web - Jeferson Ventura</title>
   </head>
   <body onLoad="loading(setTimeout(3))">
-
     <div class="box-loading">
       <div class="preloader"></div>
     </div>
 
-    <div id="root"></div> 
-    
+    <div id="root"></div>
     <script src="assets/js/scripts.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function(){
-          emailjs.init("E7s48j3b_Fiw7OCwz");
+      (function () {
+        emailjs.init("E7s48j3b_Fiw7OCwz");
       })();
     </script>
-
   </body>
 </html>
