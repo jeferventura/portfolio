@@ -23,7 +23,7 @@ header
             width: auto
 
         .logotipo 
-            width: 50% 
+            width: 40% 
 
             .logotipo-white
                 display: none
@@ -114,13 +114,40 @@ header
             //end style button dark and ligth mode
             
             .navbar-desktop
-                width: 50%
+                width: 60%
                 position: relative
                 display: flex
                 flex-direction: row
                 justify-content: space-between
                 align-items: center
                 font-size: 13px
+
+                ul
+                    display: flex
+                    li 
+                        ul
+                            position: absolute
+                            background-color: rgba(255, 255, 255, 0.555)
+                            display: none
+                            padding-left: 10px
+
+                            li
+                                width: 180px
+                                a
+                                    svg
+                                        color:  variables.$blue-color
+                                        padding-left: 20px
+
+                                    &:hover
+                                        background-color: rgba(255, 255, 255, 0)
+
+                                &:hover
+                                    transform: scale(1)
+                                    //background-color: #000000!important
+
+                        &:hover ul
+                            display: block
+                            transform: scale(1)
 
                 a
                     color: variables.$blue-color
@@ -130,7 +157,7 @@ header
                     z-index: 1
                     position: relative
                     text-transform: uppercase
-                    display: inline-block
+                    display: inline-flex
 
                     &:hover
                         background:

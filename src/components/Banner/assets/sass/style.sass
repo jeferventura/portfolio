@@ -4,15 +4,15 @@
 
 .banner
     background-color: variables.$bg-background
-    padding-block: 10px
-    height: 75%
-    max-height: 620px
+    padding-block: 0
+    height: 87%
+    max-height: 630px
 
     &-wrapper
         display: flex
         flex-direction: row
         align-items: flex-start
-        gap: 10%
+        gap: 5%
         width: 100%
         justify-content: space-between
 
@@ -22,7 +22,7 @@
             justify-content: space-around
             row-gap: 40px
             margin-top: 28px
-            width: 65%
+            width: 45%
 
             .banner-buttons
                 width: 100%
@@ -52,6 +52,7 @@
                         margin-right: 4px
                         height: 1.1em
                         width: 1.1em
+
 
     &-title
         text-transform: uppercase
@@ -125,13 +126,14 @@
             //margin: 0 8px 
 
     &-photo-profile
-        width: 35%
+        width: 55%
         img
             min-width: 210px
             max-width: 650px
-            width: 120%
+            width: 150%
             height: 100%
-            object-fit: contain
+            object-fit: cover
+            object-position: -40px -40px
 
 //css media screen
 @include mixins_midias.screen-small
