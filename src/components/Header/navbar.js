@@ -36,7 +36,7 @@ export function Navbar() {
           </li>
           <li>
             <a href="#portfolio" className="dropdown">
-              <>Portfolio</> <FaAngleDown className="arrow" />
+              <>Portfolio</> <FaAngleDown id="arrowdown" />
             </a>
             <ul>
               <li>

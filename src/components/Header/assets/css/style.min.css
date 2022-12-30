@@ -122,28 +122,37 @@ header .container nav .navbar-desktop {
 header .container nav .navbar-desktop ul {
   display: flex;
 }
+header .container nav .navbar-desktop ul li .dropdown {
+  border-radius: 20px 20px 0 0;
+}
 header .container nav .navbar-desktop ul li ul {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.555);
   display: none;
+  padding-block: 20px;
   padding-left: 10px;
 }
 header .container nav .navbar-desktop ul li ul li {
   width: 180px;
 }
-header .container nav .navbar-desktop ul li ul li a svg {
+header .container nav .navbar-desktop ul li ul li a {
+  cursor: pointer;
+}
+header .container nav .navbar-desktop ul li ul li svg#arrowdown {
   color: #4a6090;
+  fill: red;
   padding-left: 20px;
 }
-header .container nav .navbar-desktop ul li ul li a:hover {
+header .container nav .navbar-desktop ul li ul li svg#arrowdown:hover {
   background-color: rgba(255, 255, 255, 0);
+  border-radius: 0px !important;
 }
 header .container nav .navbar-desktop ul li ul li:hover {
-  transform: scale(1);
+  border-radius: 0px !important;
 }
 header .container nav .navbar-desktop ul li:hover ul {
   display: block;
-  transform: scale(1);
+  border-radius: 0 0 20px 20px;
 }
 header .container nav .navbar-desktop a {
   color: #4a6090;
@@ -161,7 +170,6 @@ header .container nav .navbar-desktop a:hover {
   background-position-y: right;
   border-radius: 500px;
   transition: all 0.3s ease-in-out;
-  transform: scale(1.08);
 }
 header .container nav .navbar-mobile {
   display: none;
@@ -200,14 +208,38 @@ header .container nav .navbar-menu-mobile {
 .sticky .logotipo .logotipo-color {
   display: none !important;
 }
-.sticky nav .navbar-desktop a {
+.sticky nav .navbar-desktop ul li a {
   color: #ffc700 !important;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.sticky nav .navbar-desktop a:hover {
-  background-color: rgba(255, 255, 255, 0.226) !important;
+.sticky nav .navbar-desktop ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.123);
   border-radius: 500px;
+}
+.sticky nav .navbar-desktop ul li ul {
+  background-color: #4a6090 !important;
+}
+.sticky nav .navbar-desktop ul li ul li {
+  width: 180px;
+}
+.sticky nav .navbar-desktop ul li ul li a {
+  cursor: pointer;
+}
+.sticky nav .navbar-desktop ul li ul li svg {
+  color: #4a6090;
+  fill: #4a6090;
+  padding-left: 20px;
+}
+.sticky nav .navbar-desktop ul li ul li svg:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.sticky nav .navbar-desktop ul li ul li:hover {
+  transform: scale(1);
+}
+.sticky nav .navbar-desktop ul li:hover ul {
+  display: block;
+  transform: scale(1);
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
