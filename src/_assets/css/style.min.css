@@ -195,25 +195,28 @@ html.dark header {
   background-color: #3F4244;
   border-bottom: 1px solid rgba(101, 106, 109, 0.631);
 }
-html.dark header .header .container .logotipo figure .logotipo-color {
+html.dark .sticky nav.navbar-main .navbar-desktop ul li ul {
+  background-color: #3F4244 !important;
+}
+html.dark .header .container .logotipo figure .logotipo-color {
   display: none;
 }
-html.dark header .header .container .logotipo figure .logotipo-white {
+html.dark .header .container .logotipo figure .logotipo-white {
   display: block;
 }
-html.dark header .header .container .menu nav.navbar-main .navbar-desktop a {
-  color: #FFF;
+html.dark .header .container .menu nav.navbar-main .navbar-desktop a {
+  color: #ffffff;
 }
-html.dark header .header .container .menu nav .navbar-mobile #nav-menu .icon {
+html.dark .header .container .menu nav .navbar-mobile #nav-menu .icon {
   fill: #FFF;
 }
-html.dark header .header .container .menu nav .navbar-mobile .navbar {
+html.dark .header .container .menu nav .navbar-mobile .navbar {
   background-color: rgba(0, 0, 0, 0.5);
 }
-html.dark header .header .container .menu nav .navbar-mobile .navbar a {
+html.dark .header .container .menu nav .navbar-mobile .navbar a {
   color: #FFF;
 }
-html.dark header .header .container .menu nav .navbar-mobile .navbar span svg {
+html.dark .header .container .menu nav .navbar-mobile .navbar span svg {
   fill: #FFF;
 }
 html.dark section.banner {

@@ -26,6 +26,9 @@ header .container {
 header .container .menu {
   width: auto;
 }
+header .container .menu svg#dropdawn {
+  color: #FFF;
+}
 header .container .logotipo {
   width: 40%;
 }
@@ -223,15 +226,15 @@ header .container nav .navbar-menu-mobile {
 .sticky nav .navbar-desktop ul li ul li {
   width: 180px;
 }
+.sticky nav .navbar-desktop ul li ul li .dropdown {
+  background-color: red;
+  border-radius: 20px 20px 0 0;
+}
 .sticky nav .navbar-desktop ul li ul li a {
   cursor: pointer;
+  border-radius: 20px 20px 0 0;
 }
-.sticky nav .navbar-desktop ul li ul li svg {
-  color: #4a6090;
-  fill: #4a6090;
-  padding-left: 20px;
-}
-.sticky nav .navbar-desktop ul li ul li svg:hover {
+.sticky nav .navbar-desktop ul li ul li a:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 .sticky nav .navbar-desktop ul li ul li:hover {
