@@ -2,7 +2,7 @@ import React from "react";
 
 import { Agencia, Hotel, Clinica, Upconsultoria } from "./Jobs/carousel";
 
-//import "./assets/css/style.min.css";
+import "./assets/css/style.min.css";
 
 const Portfolio = () => {
   return (

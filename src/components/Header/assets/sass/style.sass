@@ -22,8 +22,11 @@ header
         .menu
             width: auto
 
+            svg#dropdawn
+                color: #FFF
+
         .logotipo 
-            width: 50% 
+            width: 40% 
 
             .logotipo-white
                 display: none
@@ -114,7 +117,7 @@ header
             //end style button dark and ligth mode
             
             .navbar-desktop
-                width: 50%
+                width: 60%
                 position: relative
                 display: flex
                 flex-direction: row
@@ -122,6 +125,40 @@ header
                 align-items: center
                 font-size: 13px
 
+                ul
+                    display: flex
+                    li 
+                        & .dropdown
+                            //background-color: red
+                            border-radius: 20px 20px 0 0 
+                        ul
+                            position: absolute
+                            background-color: rgba(255, 255, 255, 0.555)
+                            display: none
+                            padding-block: 20px
+                            padding-left: 10px
+
+                            li
+                                width: 180px
+                                a 
+                                    cursor: pointer
+
+                                svg#arrowdown
+                                    color: variables.$blue-color
+                                    fill: red //variables.$blue-color
+                                    padding-left: 20px
+
+                                    &:hover
+                                        background-color: rgba(255, 255, 255, 0)
+                                        border-radius: 0px!important
+
+                                &:hover
+                                    border-radius: 0px!important
+
+                        &:hover ul
+                            display: block
+                            border-radius: 0 0 20px 20px 
+                            
                 a
                     color: variables.$blue-color
                     font-weight: 500
@@ -130,7 +167,7 @@ header
                     z-index: 1
                     position: relative
                     text-transform: uppercase
-                    display: inline-block
+                    display: inline-flex
 
                     &:hover
                         background:
@@ -139,7 +176,7 @@ header
                             position-y: right
                         border-radius: 500px
                         transition: all .3s ease-in-out
-                        transform: scale(1.08)
+                        
         nav
             .navbar-mobile
                 display: none
@@ -179,14 +216,41 @@ header
                 display: none!important
 
     nav .navbar-desktop
-        a
-            color: variables.$yellow-color!important
-            font-weight: 500
-            letter-spacing: 1px
+        ul 
+            li 
+                a
+                    color: variables.$yellow-color!important
+                    font-weight: 500
+                    letter-spacing: 1px
+                    
+                    &:hover
+                        background-color:  rgba(255, 255, 255, 0.123)
+                        border-radius: 500px
+                    
+                ul
+                    background-color: variables.$blue-color!important
 
-            &:hover
-                background-color: rgba(255, 255, 255, 0.226)!important
-                border-radius: 500px
+                    li
+                        width: 180px
+
+                        & .dropdown
+                            background-color: red
+                            border-radius: 20px 20px 0 0 
+                        
+                        a
+                            cursor: pointer
+                            border-radius: 20px 20px 0 0 
+                        
+                            
+                            &:hover
+                                background-color: rgba(255, 255, 255, 0)
+
+                        &:hover
+                            transform: scale(1)
+
+                &:hover ul
+                    display: block
+                    transform: scale(1)
 
 
 //css media screen

@@ -1,1 +1,350 @@
-@import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";*{margin:0;padding:0;box-sizing:border-box;color:#2b2d2e;font-family:"Montserrat",sans-serif}html{width:100%;height:100%;scroll-behavior:smooth}body{width:100%;height:100%;font-family:"Montserrat",sans-serif;overflow-x:auto}body .App,body .root{height:100%;width:100%}body .obj-hiden{display:none !important}@keyframes load{to{transform:rotate(360deg)}}body .preloader{width:80px;height:80px;background-color:red;animation:load 2s infinite linear}body .box-loading{position:fixed;width:100vw;height:100vh;background-color:rgba(10,57,119,.767);backdrop-filter:blur(4px);display:flex;justify-content:center;align-items:center;z-index:999999}body .container{width:100%;max-width:1100px;margin:0 auto;padding-inline:3%}body button{border:none;appearance:none}body img{width:100%;height:100%;object-fit:cover}body .box-section{margin-top:180px}body a{text-decoration:none}body p{font-size:15px}body h1{font-size:36px}body h2{fobt-size:30px}body h3{font-size:25px}body h4{font-size:20px}body h4{font-size:18px}body ul,body li{list-style:none}body .btn{padding:12px 32px;border-radius:6px;font-size:14px;font-weight:500;letter-spacing:.8px;display:inline-block;max-width:220px;margin:0 8px;gap:4px}body .btn-uppercase{text-transform:uppercase}body .btn-bg-yellow{background-color:#ffc700}body .btn-bg-yellow:hover{font-weight:700;transition:.5s}body .btn-line-blue{border:2.6px solid #4a6090}body .section-title{text-transform:uppercase;font-weight:400;letter-spacing:1.6px}body .scroll-bar-ajustes{scrollbar-width:thin;scrollbar-color:#9fa9be #c7d4f0;scroll-snap-type:x mandatory;scroll-padding:24px;scroll-snap-align:start;scroll-snap-type:smooth}body .scroll-bar-ajustes::-webkit-scrollbar{width:100%;height:8px}body .scroll-bar-ajustes::-webkit-scrollbar-track{background:#c7d4f0}body .scroll-bar-ajustes::-webkit-scrollbar-thumb{background-color:#9fa9be;border-radius:10px}body input,body textarea{width:100%;border:0;padding-inline:20px;font-size:16px;letter-spacing:.6px;border-radius:3px}body input:focus,body textarea:focus{outline:1px solid #4a6090}@media screen and (min-width: 200px)and (max-width: 480px){body p{font-size:.9rem}body .container{padding-inline:16px}body h2{font-size:19px}body .btn{padding:8px 12px;border-radius:5px;font-size:12px;text-transform:uppercase;letter-spacing:1px}body .btn-line-blue{border:1.8px solid #4a6090}body .scroll-bar-ajustes{overflow-scrolling:touch}}html.dark div.App{background-color:#212427}html.dark header{background-color:#3f4244;border-bottom:1px solid rgba(101,106,109,.631)}html.dark header .header .container .logotipo figure .logotipo-color{display:none}html.dark header .header .container .logotipo figure .logotipo-white{display:block}html.dark header .header .container .menu nav.navbar-main .navbar-desktop a{color:#fff}html.dark header .header .container .menu nav .navbar-mobile #nav-menu .icon{fill:#fff}html.dark header .header .container .menu nav .navbar-mobile .navbar{background-color:rgba(0,0,0,.5)}html.dark header .header .container .menu nav .navbar-mobile .navbar a{color:#fff}html.dark header .header .container .menu nav .navbar-mobile .navbar span svg{fill:#fff}html.dark section.banner{background-color:#3f4244}html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-title h1,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-title span.name-pessoal{color:#fff}html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .element p{color:#ffc700}html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-buttons a.btn-line-blue{color:#fff;border:2px solid #fff}html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-buttons a.btn-line-blue .icon{fill:#fff}html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#css,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#html,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#js,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#figma,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#php,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#angular,html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#bootstrap{fill:#fff;display:block !important}html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons img#figma{display:none}html.dark section.about-section .container .about .about-information .about-information-box h2.section-title{color:#fff;font-weight:normal}html.dark section.about-section .container .about .about-information .about-information-box .skills-box-title p,html.dark section.about-section .container .about .about-information .about-information-box .skills-box-title span{font-weight:normal;color:#fff;filter:drop-shadow(1px 0.9px 0.8px black);letter-spacing:.8px}html.dark section.about-section .container .about .about-information .box-text p{font-weight:normal;color:#fff}html.dark section.about-section .container .about .about-information .carousel-container .carousel-title h5{color:#fff;letter-spacing:.8px}html.dark section.journey-section .journey .title h2.section-title{color:#fff}html.dark section.journey-section .journey .journey-experience .title-content svg.icons{fill:#fff}html.dark section.journey-section .journey .journey-experience .title-content p{color:#fff}html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .experience-menu .menu-single li button.button-show{background-color:#3f4244;color:#fff}html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .experience-menu .menu-single li button.button-show:hover{background-color:#4a6090;color:#fff}html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .experience-menu .menu-single li button.selected{background-color:#4a6090;color:#fff}html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .tab-content .company-box h4,html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .tab-content .company-box p{color:#fff}html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .tab-content .company-box .company-description-job svg.icons{fill:#fff}html.dark section.journey-section .journey .journey-education .title-content svg.icons{fill:#fff}html.dark section.journey-section .journey .journey-education .title-content p{color:#fff}html.dark section.journey-section .journey .journey-education .journey-content .education-box-single{background-color:#3f4244}html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-subtitle{color:#ffc700}html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-course-title,html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-description,html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-prevision{color:#fff}html.dark section.portfolio>.portfolio-container{background-color:#3f4244 !important}html.dark section.portfolio div.format-bg{background-color:#3f4244}html.dark section.contato{background-color:#212427 !important}html.dark section.contato .container h2.section-title{color:#fff !important}html.dark section.contato .container div.icons-contato .icon-groups a p{color:#fff}html.dark section.contato .container div.icons-contato .icon-groups a svg.icon{fill:#fff}html.dark section.contato .container form.form-contato .form-group label{color:#fff;font-weight:normal}html.dark footer{background-color:#3f4244}html.dark footer .container .box-icons .codepen:hover,html.dark footer .container .box-icons .linkedin:hover,html.dark footer .container .box-icons .github:hover,html.dark footer .container .box-icons .whatsapp:hover,html.dark footer .container .box-icons .instagram:hover,html.dark footer .container .box-icons .behance:hover{background-color:#2b333f;border-radius:5px}html.dark footer .container .box-icons .codepen:hover .icons,html.dark footer .container .box-icons .linkedin:hover .icons,html.dark footer .container .box-icons .github:hover .icons,html.dark footer .container .box-icons .whatsapp:hover .icons,html.dark footer .container .box-icons .instagram:hover .icons,html.dark footer .container .box-icons .behance:hover .icons{fill:#fff}html.dark footer .container .box-icons .codepen:hover .icon-tooltip,html.dark footer .container .box-icons .linkedin:hover .icon-tooltip,html.dark footer .container .box-icons .github:hover .icon-tooltip,html.dark footer .container .box-icons .whatsapp:hover .icon-tooltip,html.dark footer .container .box-icons .instagram:hover .icon-tooltip,html.dark footer .container .box-icons .behance:hover .icon-tooltip{background:#2b333f}html.dark footer .container .box-icons .codepen:hover .icon-tooltip::before,html.dark footer .container .box-icons .linkedin:hover .icon-tooltip::before,html.dark footer .container .box-icons .github:hover .icon-tooltip::before,html.dark footer .container .box-icons .whatsapp:hover .icon-tooltip::before,html.dark footer .container .box-icons .instagram:hover .icon-tooltip::before,html.dark footer .container .box-icons .behance:hover .icon-tooltip::before{background-color:#2b333f;z-index:-1}@media screen and (min-width: 200px)and (max-width: 768px){html.dark footer .container .footer-box:nth-child(1){border-top:1px solid #a2a2a3}}/*# sourceMappingURL=style.min.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* telas média- Largura de 481px até 768 px*/
+/* telas grande- Largura de 769px até 1024 px*/
+/* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2b2d2e;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: auto;
+}
+body .App, body .root {
+  height: 100%;
+  width: 100%;
+}
+body .obj-hiden {
+  display: none !important;
+}
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+body .preloader {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  animation: load 2s infinite linear;
+}
+body .box-loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(10, 57, 119, 0.767);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+body .container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-inline: 3%;
+}
+body button {
+  border: none;
+  appearance: none;
+}
+body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .box-section {
+  margin-top: 180px;
+}
+body a {
+  text-decoration: none;
+}
+body p {
+  font-size: 15px;
+}
+body h1 {
+  font-size: 56px;
+}
+body h2 {
+  fobt-size: 30px;
+}
+body h3 {
+  font-size: 25px;
+}
+body h4 {
+  font-size: 20px;
+}
+body h4 {
+  font-size: 18px;
+}
+body ul, body li {
+  list-style: none;
+}
+body .btn {
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  display: inline-block;
+  max-width: 220px;
+  margin: 0 8px;
+  gap: 4px;
+}
+body .btn-uppercase {
+  text-transform: uppercase;
+}
+body .btn-bg-yellow {
+  background-color: #ffc700;
+  display: block;
+}
+body .btn-bg-yellow:hover {
+  fill: white;
+}
+body .btn-bg-yellow:hover {
+  font-weight: 700;
+  background-color: #e6b300;
+  transition: 0.5s;
+}
+body .btn-line-blue {
+  border: 2.6px solid #4a6090;
+}
+body .btn-line-blue:hover {
+  font-weight: 700;
+  background-color: #a6c5f3;
+  transition: 0.5s;
+}
+body .section-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+body .scroll-bar-ajustes {
+  scrollbar-width: thin;
+  scrollbar-color: #9FA9BE #c7d4f0;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 24px;
+  scroll-snap-align: start;
+  scroll-snap-type: smooth;
+}
+body .scroll-bar-ajustes::-webkit-scrollbar {
+  width: 100%;
+  height: 8px;
+}
+body .scroll-bar-ajustes::-webkit-scrollbar-track {
+  background: #c7d4f0;
+}
+body .scroll-bar-ajustes::-webkit-scrollbar-thumb {
+  background-color: #9FA9BE;
+  border-radius: 10px;
+}
+body input, body textarea {
+  width: 100%;
+  border: 0;
+  padding-inline: 20px;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  border-radius: 3px;
+}
+body input:focus, body textarea:focus {
+  outline: 1px solid #4a6090;
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  body p {
+    font-size: 0.9rem;
+  }
+  body .container {
+    padding-inline: 16px;
+  }
+  body h2 {
+    font-size: 19px;
+  }
+  body .btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  body .btn-line-blue {
+    border: 1.8px solid #4a6090;
+  }
+  body .scroll-bar-ajustes {
+    overflow-scrolling: touch;
+  }
+}
+html.dark div.App {
+  background-color: #212427;
+}
+html.dark header {
+  background-color: #3F4244;
+  border-bottom: 1px solid rgba(101, 106, 109, 0.631);
+}
+html.dark .sticky nav.navbar-main .navbar-desktop ul li ul {
+  background-color: #3F4244 !important;
+}
+html.dark .header .container .logotipo figure .logotipo-color {
+  display: none;
+}
+html.dark .header .container .logotipo figure .logotipo-white {
+  display: block;
+}
+html.dark .header .container .menu nav.navbar-main .navbar-desktop a {
+  color: #ffffff;
+}
+html.dark .header .container .menu nav .navbar-mobile #nav-menu .icon {
+  fill: #FFF;
+}
+html.dark .header .container .menu nav .navbar-mobile .navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html.dark .header .container .menu nav .navbar-mobile .navbar a {
+  color: #FFF;
+}
+html.dark .header .container .menu nav .navbar-mobile .navbar span svg {
+  fill: #FFF;
+}
+html.dark section.banner {
+  background-color: #3F4244;
+}
+html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-title h1, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-title span.name-pessoal {
+  color: white;
+}
+html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .element p {
+  color: #ffc700;
+}
+html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-buttons a.btn-line-blue {
+  color: white;
+  border: 2px solid #FFF;
+}
+html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-buttons a.btn-line-blue .icon {
+  fill: #FFF;
+}
+html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#css, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#html, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#js, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#figma, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#php, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#angular, html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons svg#bootstrap {
+  fill: #ffffff;
+  display: block !important;
+}
+html.dark section.banner .banner-container .banner-wrapper .banner-wrapper-box .banner-icons img#figma {
+  display: none;
+}
+html.dark section.about-section .container .about .about-information .about-information-box h2.section-title {
+  color: #fff;
+  font-weight: normal;
+}
+html.dark section.about-section .container .about .about-information .about-information-box .skills-box-title p, html.dark section.about-section .container .about .about-information .about-information-box .skills-box-title span {
+  font-weight: normal;
+  color: #fff;
+  filter: drop-shadow(1px 0.9px 0.8px black);
+  letter-spacing: 0.8px;
+}
+html.dark section.about-section .container .about .about-information .box-text p {
+  font-weight: normal;
+  color: #fff;
+}
+html.dark section.about-section .container .about .about-information .carousel-container .carousel-title h5 {
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+html.dark section.journey-section .journey .title h2.section-title {
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-experience .title-content svg.icons {
+  fill: #fff;
+}
+html.dark section.journey-section .journey .journey-experience .title-content p {
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .experience-menu .menu-single li button.button-show {
+  background-color: #3F4244;
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .experience-menu .menu-single li button.button-show:hover {
+  background-color: #4a6090;
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .experience-menu .menu-single li button.selected {
+  background-color: #4a6090;
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .tab-content .company-box h4, html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .tab-content .company-box p {
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-experience .journey-content .journey-experience-box .tab-content .company-box .company-description-job svg.icons {
+  fill: #fff;
+}
+html.dark section.journey-section .journey .journey-education .title-content svg.icons {
+  fill: #fff;
+}
+html.dark section.journey-section .journey .journey-education .title-content p {
+  color: #FFF;
+}
+html.dark section.journey-section .journey .journey-education .journey-content .education-box-single {
+  background-color: #3F4244;
+}
+html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-subtitle {
+  color: #ffc700;
+}
+html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-course-title, html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-description, html.dark section.journey-section .journey .journey-education .journey-content .education-box-single .box-school p.school-prevision {
+  color: #FFF;
+}
+html.dark section.portfolio > .portfolio-container {
+  background-color: #3F4244 !important;
+}
+html.dark section.portfolio div.format-bg {
+  background-color: #3F4244;
+}
+html.dark section.contato {
+  background-color: #212427 !important;
+}
+html.dark section.contato .container h2.section-title {
+  color: #FFF !important;
+}
+html.dark section.contato .container div.icons-contato .icon-groups a p {
+  color: #FFF;
+}
+html.dark section.contato .container div.icons-contato .icon-groups a svg.icon {
+  fill: #FFF;
+}
+html.dark section.contato .container form.form-contato .form-group label {
+  color: #FFF;
+  font-weight: normal;
+}
+html.dark footer {
+  background-color: #3F4244;
+}
+html.dark footer .container .box-icons .codepen:hover, html.dark footer .container .box-icons .linkedin:hover, html.dark footer .container .box-icons .github:hover, html.dark footer .container .box-icons .whatsapp:hover, html.dark footer .container .box-icons .instagram:hover, html.dark footer .container .box-icons .behance:hover {
+  background-color: #2b333f;
+  border-radius: 5px;
+}
+html.dark footer .container .box-icons .codepen:hover .icons, html.dark footer .container .box-icons .linkedin:hover .icons, html.dark footer .container .box-icons .github:hover .icons, html.dark footer .container .box-icons .whatsapp:hover .icons, html.dark footer .container .box-icons .instagram:hover .icons, html.dark footer .container .box-icons .behance:hover .icons {
+  fill: #FFF;
+}
+html.dark footer .container .box-icons .codepen:hover .icon-tooltip, html.dark footer .container .box-icons .linkedin:hover .icon-tooltip, html.dark footer .container .box-icons .github:hover .icon-tooltip, html.dark footer .container .box-icons .whatsapp:hover .icon-tooltip, html.dark footer .container .box-icons .instagram:hover .icon-tooltip, html.dark footer .container .box-icons .behance:hover .icon-tooltip {
+  background: #2b333f;
+}
+html.dark footer .container .box-icons .codepen:hover .icon-tooltip::before, html.dark footer .container .box-icons .linkedin:hover .icon-tooltip::before, html.dark footer .container .box-icons .github:hover .icon-tooltip::before, html.dark footer .container .box-icons .whatsapp:hover .icon-tooltip::before, html.dark footer .container .box-icons .instagram:hover .icon-tooltip::before, html.dark footer .container .box-icons .behance:hover .icon-tooltip::before {
+  background-color: #2b333f;
+  z-index: -1;
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  html.dark footer .container .footer-box:nth-child(1) {
+    border-top: 1px solid #a2a2a3;
+  }
+}
+
+/*# sourceMappingURL=style.min.css.map */
