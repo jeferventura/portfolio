@@ -1,0 +1,144 @@
+@use '../../../../_assets/sass/variables'
+@use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
+
+.banner
+    background-color: variables.$bg-background
+    padding-block: 0
+    height: 87%
+    max-height: 630px
+
+    &-wrapper
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        gap: 5%
+        width: 100%
+        justify-content: space-between
+
+        &-box
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            row-gap: 40px
+            margin-top: 28px
+            width: 45%
+
+            .banner-buttons
+                width: 100%
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                gap: 12px
+
+                .btn-line-blue
+                    color: variables.$blue-color
+
+                    .icon
+                        fill: variables.$blue-color
+                        
+                a
+                    margin-left: 0
+                    width: 100%
+                    display: flex
+                    max-width: 215px
+                    text-align: center
+                    justify-content: center
+                    align-items: center!important
+                    font-weight: 600
+
+
+                    .icon
+                        margin-right: 4px
+                        height: 1.1em
+                        width: 1.1em
+
+
+    &-title
+        text-transform: uppercase
+        letter-spacing: .8px
+        white-space: nowrap
+        margin:
+            top: 30px
+            bottom: 10px
+
+        h1
+            font-weight: 300
+            font-size: 2.2rem
+
+            span
+                font-weight: 800
+                font-size: 2.2rem
+                display: block
+        
+        div.element
+            font-size: 16px
+            font-weight: 500
+            white-space: nowrap
+            color: #2b2d2e
+
+            p
+                display: inline
+                position: relative
+                margin:
+                    right: 3px!important
+                    top: 0!important
+                letter-spacing: .8px
+                font-size: 14px
+                text-transform: uppercase
+                animation: slide 5s step-start infinite
+
+    &-icons
+        display: flex
+        flow-direction: row
+        align-items: center
+        column-gap: 8px
+        margin:
+            top: 8px
+
+        .icons
+            height: 1.7rem
+            width: 1.7rem
+            margin-right: 8px
+
+        svg#css
+            fill: #316ac5
+
+        svg#html
+            fill: #e45604
+        
+        svg#js
+            fill: #cfa10a
+
+        svg#php
+            fill: #431e80
+
+        svg#angular
+            fill: #a80e16
+
+        svg#bootstrap
+            fill: #710ca0
+
+        img
+            height: 1.7rem
+            width: 1.7rem
+            max-width: 24px
+            //margin: 0 8px 
+
+    &-photo-profile
+        width: 55%
+        img
+            min-width: 210px
+            max-width: 650px
+            width: 150%
+            height: 100%
+            object-fit: cover
+            object-position: -40px -40px
+
+//css media screen
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge
+
+

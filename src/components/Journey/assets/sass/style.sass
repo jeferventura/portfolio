@@ -1,0 +1,54 @@
+@use '../../../../_assets/sass/variables'
+@use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
+
+/* start  compenents journey*/
+section .journey
+    
+    margin:
+        top: 90px
+        bottom: 90px
+        
+    .title
+        margin: 0 auto
+        width: 30%
+
+    h2.section-title
+        text-transform: uppercase
+        font-weight: 400
+
+        &::after
+            @include mixins.after-bar
+    
+    .title-content
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+
+        p
+            text-transform: uppercase
+            display: inline-block
+            margin-left: 10px
+            font-weight: 500
+            font-size: 16px
+
+        .icons
+            width: 1.4em
+            height: 1.4em
+    
+    .journey-experience
+        margin-top: 20px
+
+    .journey-education
+        margin-top: 20px
+
+
+
+/* end  compenents carousel*/
+
+//css media screen
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge

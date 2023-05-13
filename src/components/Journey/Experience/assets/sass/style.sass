@@ -1,0 +1,94 @@
+@use '../../../../../_assets/sass/variables'
+@use '../../../../../_assets/sass/mixins'
+section.journey-section
+    .journey-content
+        margin-top: 30px
+
+        .journey-experience-box
+            display: flex
+            flex-direction: row
+            width: 100%
+            height: 100%
+            min-height: 200px
+            margin-bottom: 30px
+        
+            .experience-menu
+                width: 20%
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                column-gap: 10px
+
+                .menu-single
+                    height: 35px
+                    margin-bottom: 10px
+                    width: 100%
+
+                    button
+                        color: variables.$graydrak-color
+                        background-color: variables.$bg-background
+                        font-weight: 600
+                        font-size: 14px
+                        letter-spacing: .8px
+                        text-align: right
+                        width: 100%
+                        cursor: pointer
+                        border-bottom: 2.6px solid variables.$yellow-color
+                        border-radius: 5px
+                        margin-bottom: 12px
+                        padding: 
+                            top:12px
+                            bottom: 8px
+                            right: 20px
+
+                        &:hover
+                            background-color: variables.$blue-color
+                            color: #FFF
+
+                        &[disabled]
+                            background-color: #d1d1d1
+                            cursor: not-allowed
+                            color: #abacad
+
+                            &:hover
+                                background-color: #d1d1d1
+
+                    button.selected
+                        background-color: variables.$blue-color
+                        color: #FFF
+
+                .menu-sigle-active
+                    background-color: variables.$blue-color
+
+                    button
+                        color: #FFF
+                        
+            .tab-content
+                width: 80%
+                margin-left: 20px
+                letter-spacing: .3px
+
+                .company
+                    &-header
+                        margin-bottom: 10px
+
+                    &-subtitle
+                        font-size: 12px
+
+                    &-description-job
+                        display: flex
+                        flex-direction: column
+                        padding: 10px 0
+                        justify-content: center
+
+                        button
+                            padding: 6px 0
+
+                        .icons
+                            height: .8em
+                            margin-right: 10px
+
+                        p
+                            padding-bottom: 0px
+
+

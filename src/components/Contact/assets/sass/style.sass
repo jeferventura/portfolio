@@ -1,0 +1,181 @@
+@use '../../../../_assets/sass/variables'
+@use '../../../../_assets/sass/mixins'
+@use 'mixins_midias'
+
+.send-menssage-sucess
+    font-size: 15px
+    border: 
+        block-start-width: .8px
+        block-end-width: .8px
+        inline-start-width: 5px
+        inline-end-width: .8px
+        style: solid
+        color: #2e9714
+    color: #288d0f
+    display: block
+    width: 70%
+    padding: 12px 16px
+    margin-bottom: 20px
+    border-radius: 5px
+    font-weight: 500
+    background-color: #a6f593
+    letter-spacing: .8px
+
+.send-menssage-error
+    font-size: 15px
+    border: 
+        block-start-width: .8px
+        block-end-width: .8px
+        inline-start-width: 5px
+        inline-end-width: .8px
+        style: solid
+        color: #8d0808
+    color: #8d0808
+    display: block
+    width: 70%
+    padding: 12px 16px
+    margin-bottom: 20px
+    border-radius: 5px
+    font-weight: 500
+    background-color: #ee8484
+    letter-spacing: .8px
+
+section.contato
+    padding:
+        top: 50px
+        bottom: 60px
+    margin-top: -60px
+    background-color: variables.$yellow-color
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    z-index: -1
+    //-webkit-clip-path: polygon(50% 50%, 100% 0, 100% 100%,  100%, 0 0)
+    //clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0)
+
+    .container
+        display: flex   
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 
+            top: 50px
+
+        h2.section-title
+            display: block 
+            color: variables.$blue-color
+            margin-top: 40px
+
+            &::after
+                @include mixins.after-bar
+                background-color: white
+                display: block
+                max-width: 18%
+
+
+    .icons-contato
+        width: 90%
+        display: flex
+        flex-direction: row
+        font-weight: 500
+        letter-spacing: .8px
+        justify-content: space-around
+        align-items: center
+        justify-items: center
+        flex-wrap: wrap
+        column-gap: 15px
+        padding: 10px 0
+        margin:
+            top: 20px
+            bottom: 28px
+
+        .icon
+            height: 1.5em
+            width: 1.5em
+            margin-right: 5px
+
+            &-groups
+                display: flex
+                align-items: center
+                flex-direction: row
+                gap: 5px
+                padding-bottom: 10px 
+
+                a
+                    display: flex
+                    align-items: center
+                    flex-direction: row
+                    flex-wrap: nowrap
+
+    form.form-contato
+        width: 70%
+
+        div.align-button 
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            padding-inline: 0
+
+        .form-group
+            margin-bottom: 24px
+
+            span.text-error
+                color: #f01e4c
+                font-size: 13px
+                font-weight: 600
+                padding-top: 4px
+                display: flex
+                flex-direction: row
+                align-items: center
+
+                .icon
+                    fill: #f01e4c
+                    margin-right: 8px
+
+            label
+                display: block
+                margin-bottom: 4px
+                font-weight: 450
+
+            input
+                height: 35px
+                width: 100%
+
+            textarea
+                height: 120px
+                padding-top: 10px
+                resize: vertical
+
+            button
+                background-color: variables.$blue-color
+                padding: 12px 38px 
+                color: white
+                display: flex
+                align-items: center
+                cursor: pointer
+                margin-right: 0
+
+                &:hover
+                    background-color: variables.$blue-color-hover
+
+                .icon
+                    fill: white
+                    margin-right: 5px
+                
+        .form-box-group
+            display: flex
+            column-gap: 10px
+            width: 100%
+
+            .form-group
+                &:nth-of-type(1)
+                    width: 60%
+
+                &:nth-of-type(2)
+                    width: 40%
+
+@include mixins_midias.screen-small
+@include mixins_midias.screen-small
+@include mixins_midias.screen-media
+@include mixins_midias.screen-large
+@include mixins_midias.screen-extralarge
