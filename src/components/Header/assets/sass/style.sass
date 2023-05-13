@@ -59,11 +59,12 @@ header
                         outline: none
                         background-color: #FFF
                         border-radius: 25% / 50%
-                        padding: 2px
+                        padding: 1px
+                        padding-inline: .2em
                         width: 4em
-                        height: 2em
+                        height: 1.8em
                         appearance: none
-                        border: 2px solid variables.$blue-color
+                        border: 1px solid variables.$blue-color
                         transition: all .3s ease-in-out
 
                         &::before
@@ -76,11 +77,11 @@ header
                             transition: all .3s ease-in-out
                             transform: translateX(0em)
                             background:
-                                image: url('/public/assets/images/header/sun-solid.webp')
+                                image: url('/public/assets/images/header/moon-solid.webp')
                                 size: 70%
                                 repeat: no-repeat
                                 position: center
-                                color: variables.$yellow-color
+                                color: #25b6f4
 
                         &:checked
                             background-color: variables.$bg-background-dark-secondary
@@ -88,8 +89,8 @@ header
                             &::before
                                 //transform: translateX(3em)
                                 background:
-                                    color: #25b6f4
-                                    image: url('/public/assets/images/header/moon-solid.webp')
+                                    color:variables.$yellow-color 
+                                    image: url('/public/assets/images/header/sun-solid.webp')
                                     size: 80%
                                     repeat: no-repeat
                                     position: center

@@ -35,21 +35,9 @@ export function Navbar() {
             <a href="#journey">Jornada</a>
           </li>
           <li>
-            <a href="#portfolio" className="dropdown">
-              <>Portfolio</> <FaAngleDown id="arrowdown" />
-            </a>
-            <ul>
-              <li>
-                <a>Front-end</a>
-              </li>
-              <li>
-                <a>UX & Ui Design</a>
-              </li>
-              <li>
-                <a>Design Gráfico</a>
-              </li>
-            </ul>
+            <a href="#portfolio">Portfolio</a>
           </li>
+
           <li>
             <a href="#contact">Contato</a>
           </li>
