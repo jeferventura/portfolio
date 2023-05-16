@@ -16,7 +16,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+<<<<<<< HEAD
     "react-scripts": "5.0.1",
+=======
+    "react-scripts": "^5.0.1",
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11",

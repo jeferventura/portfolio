@@ -22,8 +22,16 @@ header
         .menu
             width: auto
 
+<<<<<<< HEAD
         .logotipo 
             width: 50% 
+=======
+            svg#dropdawn
+                color: #FFF
+
+        .logotipo 
+            width: 40% 
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
 
             .logotipo-white
                 display: none
@@ -56,11 +64,20 @@ header
                         outline: none
                         background-color: #FFF
                         border-radius: 25% / 50%
+<<<<<<< HEAD
                         padding: 2px
                         width: 4em
                         height: 2em
                         appearance: none
                         border: 2px solid variables.$blue-color
+=======
+                        padding: 1px
+                        padding-inline: .2em
+                        width: 4em
+                        height: 1.8em
+                        appearance: none
+                        border: 1px solid variables.$blue-color
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
                         transition: all .3s ease-in-out
 
                         &::before
@@ -73,11 +90,19 @@ header
                             transition: all .3s ease-in-out
                             transform: translateX(0em)
                             background:
+<<<<<<< HEAD
                                 image: url('/public/assets/images/header/sun-solid.webp')
                                 size: 70%
                                 repeat: no-repeat
                                 position: center
                                 color: variables.$yellow-color
+=======
+                                image: url('/public/assets/images/header/moon-solid.webp')
+                                size: 70%
+                                repeat: no-repeat
+                                position: center
+                                color: #25b6f4
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
 
                         &:checked
                             background-color: variables.$bg-background-dark-secondary
@@ -85,8 +110,13 @@ header
                             &::before
                                 //transform: translateX(3em)
                                 background:
+<<<<<<< HEAD
                                     color: #25b6f4
                                     image: url('/public/assets/images/header/moon-solid.webp')
+=======
+                                    color:variables.$yellow-color 
+                                    image: url('/public/assets/images/header/sun-solid.webp')
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
                                     size: 80%
                                     repeat: no-repeat
                                     position: center
@@ -114,7 +144,11 @@ header
             //end style button dark and ligth mode
             
             .navbar-desktop
+<<<<<<< HEAD
                 width: 50%
+=======
+                width: 60%
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
                 position: relative
                 display: flex
                 flex-direction: row
@@ -122,6 +156,43 @@ header
                 align-items: center
                 font-size: 13px
 
+<<<<<<< HEAD
+=======
+                ul
+                    display: flex
+                    li 
+                        & .dropdown
+                            //background-color: red
+                            border-radius: 20px 20px 0 0 
+                        ul
+                            position: absolute
+                            background-color: rgba(255, 255, 255, 0.555)
+                            display: none
+                            padding-block: 20px
+                            padding-left: 10px
+
+                            li
+                                width: 180px
+                                a 
+                                    cursor: pointer
+
+                                svg#arrowdown
+                                    color: variables.$blue-color
+                                    fill: red //variables.$blue-color
+                                    padding-left: 20px
+
+                                    &:hover
+                                        background-color: rgba(255, 255, 255, 0)
+                                        border-radius: 0px!important
+
+                                &:hover
+                                    border-radius: 0px!important
+
+                        &:hover ul
+                            display: block
+                            border-radius: 0 0 20px 20px 
+                            
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
                 a
                     color: variables.$blue-color
                     font-weight: 500
@@ -130,7 +201,11 @@ header
                     z-index: 1
                     position: relative
                     text-transform: uppercase
+<<<<<<< HEAD
                     display: inline-block
+=======
+                    display: inline-flex
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
 
                     &:hover
                         background:
@@ -139,7 +214,11 @@ header
                             position-y: right
                         border-radius: 500px
                         transition: all .3s ease-in-out
+<<<<<<< HEAD
                         transform: scale(1.08)
+=======
+                        
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
         nav
             .navbar-mobile
                 display: none
@@ -179,6 +258,7 @@ header
                 display: none!important
 
     nav .navbar-desktop
+<<<<<<< HEAD
         a
             color: variables.$yellow-color!important
             font-weight: 500
@@ -187,6 +267,43 @@ header
             &:hover
                 background-color: rgba(255, 255, 255, 0.226)!important
                 border-radius: 500px
+=======
+        ul 
+            li 
+                a
+                    color: variables.$yellow-color!important
+                    font-weight: 500
+                    letter-spacing: 1px
+                    
+                    &:hover
+                        background-color:  rgba(255, 255, 255, 0.123)
+                        border-radius: 500px
+                    
+                ul
+                    background-color: variables.$blue-color!important
+
+                    li
+                        width: 180px
+
+                        & .dropdown
+                            background-color: red
+                            border-radius: 20px 20px 0 0 
+                        
+                        a
+                            cursor: pointer
+                            border-radius: 20px 20px 0 0 
+                        
+                            
+                            &:hover
+                                background-color: rgba(255, 255, 255, 0)
+
+                        &:hover
+                            transform: scale(1)
+
+                &:hover ul
+                    display: block
+                    transform: scale(1)
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
 
 
 //css media screen

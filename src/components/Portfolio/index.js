@@ -1,8 +1,20 @@
 import React from "react";
 
+<<<<<<< HEAD
 import { Agencia, Hotel, Clinica, Upconsultoria } from "./Jobs/carousel";
 
 //import "./assets/css/style.min.css";
+=======
+import {
+  Agencia,
+  Hotel,
+  Clinica,
+  Upconsultoria,
+  Beauty,
+} from "./Jobs/carousel";
+
+import "./assets/css/style.min.css";
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
 
 const Portfolio = () => {
   return (
@@ -15,6 +27,10 @@ const Portfolio = () => {
             <Hotel />
             <Clinica />
             <Upconsultoria />
+<<<<<<< HEAD
+=======
+            <Beauty />
+>>>>>>> b70aabc163db74fa5031d4c57eb245a5aab82f1a
           </div>
         </div>
       </div>

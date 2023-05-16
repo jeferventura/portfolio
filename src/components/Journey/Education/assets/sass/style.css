@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* telas média- Largura de 481px até 768 px*/
+/* telas grande- Largura de 769px até 1024 px*/
+/* telas extra grande- Largura minima de 1220px até qualquer tamanho superior*/
+.journey-education {
+  margin-top: 60px !important;
+}
+.journey-education .education-box-hidden {
+  display: none !important;
+}
+.journey-education > .education-box-visible {
+  display: block !important;
+}
+.journey-education .education-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  row-gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: stretch;
+  min-width: 200px;
+}
+.journey-education .education-box .education-box-single {
+  background-color: #e6e6f5;
+  padding-top: 30px;
+  padding-inline: 20px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  width: 31.3333333333%;
+  height: auto;
+  animation: visible;
+  animation-duration: 0.5s;
+  box-shadow: 17px 17px 22px rgba(0, 0, 0, 0.06);
+}
+.journey-education .education-box .education-box-single:nth-of-type(4) {
+  animation: visible;
+  animation-duration: 0.5s;
+}
+.journey-education .education-box .education-box-single:nth-of-type(5) {
+  animation: visible;
+  animation-duration: 0.8s;
+}
+.journey-education .education-box .education-box-single:nth-of-type(6) {
+  animation: visible;
+  animation-duration: 0.9s;
+}
+@keyframes visible {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.journey-education .education-box .education-box-single .infor-school {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+.journey-education .education-box .education-box-single .infor-school .school-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #4a6090;
+}
+.journey-education .education-box .education-box-single .infor-school .school-course-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.journey-education .education-box .education-box-single .infor-school .school-description {
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.journey-education .education-box .education-box-single .infor-school .school-prevision {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.journey-education .buttom-red-More {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.journey-education .buttom-red-More button.btn {
+  display: inline-block;
+  padding: 12px 36px;
+  background-color: #babac5;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.journey-education .buttom-red-More button.btn:hover {
+  background-color: #4a6090;
+  color: #FFF;
+}
+.journey-education .buttom-red-More .button-hiden {
+  display: none !important;
+}/*# sourceMappingURL=style.css.map */
