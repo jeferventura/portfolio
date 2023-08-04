@@ -8,182 +8,26 @@ footer
     background-color: variables.$blue-color
     width: 100%
 
-    .container
-        display: flex
-        flex-direction: row
-        column-gap: 35px
-        justify-content: space-between
+.container
+    display: flex
+    flex-direction: row
+    column-gap: 35px
+    justify-content: space-between
 
-        .footer-box
-            width: 100%
+    .footer-box
+        width: 100%
 
-            &:first-of-type
-                display: flex
-                flex-direction: column
-
-                p
-                    display: block
-                    width: 100%
-                    padding-top: 5px
-                    font-size: 13px
-                    color: #FFF
-
-        .box-icons
+        &:first-of-type
             display: flex
-            flex-flow: row nowrap
-            column-gap: 10px 
-            justify-content: flex-end
-            align-items: center
-            
+            flex-direction: column
 
-            .footer-icons-box
-                margin: 0 8px
-                padding: 4px 
-                text-align: center
-                cursor: pointer
-                align-items: center
-                justify-content: center
-                flex-direction: column
-                display: flex
-                z-index: 2
-                position: relative
-                transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+            p
+                display: block
+                width: 100%
+                padding-top: 5px
+                font-size: 13px
+                color: #FFF
 
-                .icons
-                    fill: #FFF
-                    height: 1.2em
-                    width: 1.2em
-                    margin-inline: 5px
-                    position: relative
-                    z-index: 2
-                    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-
-
-                .icon-tooltip
-                    position: absolute
-                    top: 0
-                    z-index: 1
-                    background-color: #FFF
-                    color: #fff
-                    padding: 4px 8px
-                    width: 90px
-                    font-size: 12px
-                    font-weight: 500
-                    border-radius: 25px
-                    opacity: 0
-                    pointer-events: none
-                    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.1)
-                    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-
-                    &:before
-                        position: absolute
-                        content: ""
-                        height: 15px
-                        width: 15px
-                        background-color: #fff
-                        left: 50%
-                        bottom: -6px
-                        transform: translateX(-50%) rotate(45deg)
-                        transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)
-
-
-                &:hover .icon-tooltip
-                    top: -40px
-                    opacity: 1
-                    pointer-events: auto
-
-            .codepen
-                &:hover
-                    background-color: #2b333f
-                    border-radius: 5px
-
-                &:hover .icons
-                    fill: #FFF
-
-                &:hover .icon-tooltip
-                    background: #2b333f
-                
-                &:hover .icon-tooltip::before
-                    background-color: #2b333f
-                    z-index: -1
-            
-            .linkedin
-                &:hover
-                    background-color: #083e70
-                    border-radius: 5px
-
-                &:hover .icons
-                    fill: #FFF
-
-                &:hover .icon-tooltip
-                    background: #083e70
-                
-                &:hover .icon-tooltip::before
-                    background-color: #083e70
-                    z-index: -1
-
-            .github
-                &:hover
-                    background-color: #2b333f
-                    border-radius: 5px
-
-                &:hover .icons
-                    fill: #FFF
-
-                &:hover .icon-tooltip
-                    background: #2b333f
-                
-                &:hover .icon-tooltip::before
-                    background-color: #2b333f
-                    z-index: -1
-
-            .whatsapp
-                &:hover
-                    background-color: #39b414
-                    border-radius: 5px
-
-                &:hover .icons
-                    fill: #FFF
-                    
-
-                &:hover .icon-tooltip
-                    background: #39b414
-                
-                &:hover .icon-tooltip::before
-                    background-color: #39b414
-                    z-index: -1
-
-            .instagram
-                &:hover
-                    background-color: #C92D86
-                    border-radius: 5px
-
-                &:hover .icons
-                    fill: #FFF
-                    
-
-                &:hover .icon-tooltip
-                    background: #C92D86
-                
-                &:hover .icon-tooltip::before
-                    background-color: #C92D86
-                    z-index: -1
-
-            .behance
-                &:hover
-                    background-color: #2160e7
-                    border-radius: 5px
-
-                &:hover .icons
-                    fill: #FFF
-                    
-
-                &:hover .icon-tooltip
-                    background: #2160e7
-                
-                &:hover .icon-tooltip::before
-                    background-color: #2160e7
-                    z-index: -1
 
 //css media screen
 @include mixins_midias.screen-small

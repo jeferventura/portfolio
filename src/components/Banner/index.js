@@ -10,8 +10,16 @@ import {
   FaPhp,
   FaJsSquare,
 } from "react-icons/fa";
+import {
+  Codepen,
+  GitHub,
+  WhatsApp,
+  LinkedIn,
+  Behance,
+} from "../icons/icons_midias_sociais";
 
 import "./assets/css/style.min.css";
+import styles from "./assets/css/mystyle.module.css";
 
 const Banner = () => {
   return (
